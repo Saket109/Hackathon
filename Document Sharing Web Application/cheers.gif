@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://web.whatsapp.com/ -->
+<html class="js serviceworker adownload cssanimations csstransitions webp exiforientation webp-alpha webp-animation webp-lossless wf-loading" dir="LTR" loc="en-GB" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>WhatsApp</title><meta name="viewport" content="width=device-width"><meta name="google" content="notranslate"><meta name="format-detection" content="telephone=no"><meta name="description" content="Quickly send and receive WhatsApp messages right from your computer."><meta name="og:description" content="Quickly send and receive WhatsApp messages right from your computer."><meta name="og:url" content="https://web.whatsapp.com/"><meta name="og:title" content="WhatsApp Web"><meta name="og:image" content="https://static.facebook.com/images/whatsapp/www/whatsapp-promo.png"><link rel="apple-touch-icon" sizes="194x194" href="https://web.whatsapp.com/apple-touch-icon.png" type="image/png"><style>#initial_startup{--startup-background:#f0f2f5;--startup-background-rgb:240,242,245;--startup-icon:#bbc5cb;--secondary-lighter:#8696a0;--primary-title:#41525d;--progress-primary:#00c298;--progress-background:#e9edef}.dark #initial_startup{--startup-background:#111b21;--startup-background-rgb:17,27,33;--startup-icon:#676f73;--primary-title:rgba(233, 237, 239, 0.88);--secondary-lighter:#667781;--progress-primary:#0b846d;--progress-background:#233138}#app,body,html{width:100%;height:100%;padding:0;margin:0;overflow:hidden}#app{position:absolute;top:0;left:0}#initial_startup{position:fixed;top:0;left:0;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;user-select:none;background-color:var(--startup-background)}#initial_startup .graphic{margin-top:-40px;color:var(--startup-icon)}#initial_startup .graphic .resume-logo{transform:translateX(calc(50% - 52px / 2))}#initial_startup .graphic::after{position:relative;top:-100%;left:calc(50% - 72px * 2 - 72px / 2);display:block;width:calc(72px * 3);height:100%;content:'';background:linear-gradient(to right,rgba(var(--startup-background-rgb),.5) 0,rgba(var(--startup-background-rgb),.5) 33.33%,rgba(var(--startup-background-rgb),0) 44.1%,rgba(var(--startup-background-rgb),0) 55.8%,rgba(var(--startup-background-rgb),.5) 66.66%,rgba(var(--startup-background-rgb),.5) 100%);opacity:1;animation:shimmer 1.5s linear .6s infinite}html[dir=rtl] #initial_startup .graphic::after{animation-direction:reverse}@keyframes shimmer{from{left:calc(50% - 72px * 2 - 72px / 2)}to{left:calc(50% - 72px / 2)}}#initial_startup .progress{position:relative;width:420px;height:3px;margin-top:40px}#initial_startup .progress progress{vertical-align:top}#initial_startup .main{margin-top:40px;font-size:17px;color:var(--primary-title)}#initial_startup .secondary{margin-top:12px;font-size:14px;color:var(--secondary-lighter)}#initial_startup .secondary span{display:inline-block;margin-bottom:2px;vertical-align:middle}progress{-webkit-appearance:none;appearance:none;width:100%;height:3px;margin:0;color:var(--progress-primary);background-color:var(--progress-background);border:none}progress[value]::-webkit-progress-bar{background-color:var(--progress-background)}progress[value]::-moz-progress-bar,progress[value]::-webkit-progress-value{background-color:var(--progress-primary);transition:width .45s ease}</style><link href="https://web.whatsapp.com/stylex-082eefb6955f9a18a5bc246b463368f4.css" rel="stylesheet"><link href="https://web.whatsapp.com/bootstrap_qr-e60f0b990f477f25a8d1.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="https://web.whatsapp.com/bootstrap_main.c6931af0d277372296c8.css"><style id="asset-style" type="text/css"></style><link rel="stylesheet" type="text/css" href="https://web.whatsapp.com/lazy_loaded_high_priority_components.87f23220502e404ed73c.css"><link rel="stylesheet" type="text/css" href="https://web.whatsapp.com/lazy_loaded_low_priority_components.133150805f6ef0ef9da7.css"><style>@font-face {font-family:"Noto-Emoji"; src:url("/noto_emoji_regular_40c0691231b767bd3e693d583006a1ed.ttf") format("truetype");}</style><link id="favicon" rel="shortcut icon" type="image/png" href="https://web.whatsapp.com/img/favicon-error2_fb2afa4bfd23495c7bd2555bb080bb35.png" src="/img/favicon-error2_fb2afa4bfd23495c7bd2555bb080bb35.png"></head><body class="web"><script data-binary-transparency-hash-key="inline-js-4b79b6dc91a7ee33373b115991c3eb287ed710cfb6708421b4cab682eddbfcbd">try{var systemThemeDark,theme=window.localStorage.getItem(""),systemThemeMode=window.localStorage.getItem("system-theme-mode");if(("true"===systemThemeMode||!theme)&&window.matchMedia){var systemTheme=window.matchMedia("(prefers-color-scheme: dark)");systemThemeDark=systemTheme&&systemTheme.matches}var darkTheme='"dark"'===theme||Boolean(systemThemeDark);darkTheme&&document.body.classList.add("dark")}catch(e){}</script><div id="app"><div class="_1ADa8 _3Nsgw app-wrapper-web font-fix"><span></span><span></span><span></span><span></span><span></span><div tabindex="-1" class="_1XkO3 two"><div class="snyj76hw an6tjemt jbm6vef4 bbl9m3t3 ora14ekb nv3qcefw"></div><div class="_3ArsE"><div class="ldL67 _2i3T7 _1cpSb" data-testid="drawer-left"><span class="lhggkp7q qq0sjtgm ebjesfe0 jxacihee tkdu00h0"></span></div><div class="ldL67 _3sh5K" data-testid="drawer-middle"><span class="lhggkp7q qq0sjtgm ebjesfe0 jxacihee tkdu00h0"></span></div></div><div class="ldL67 _2i3T7"><header data-testid="chatlist-header" class="g0rxnol2 ercejckq cm280p3y p357zi0d gndfcl4n kcgo1i74 ln8gz9je e8h85j61 emrlamx0 aiput80m lyvj5e2u l9g3jx6n f6ipylw5"><div class="YtmXM"><div class="_3GlyB" style="height: 40px; width: 40px; cursor: pointer;"><img src="https://pps.whatsapp.net/v/t61.24694-24/225521582_126052180034153_4463229637970247671_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVwls1iKt8PkImIGuN2gwU5PQKk0h7BUgpeQk8z74XQPlA&amp;oe=6333B4B6" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div><div class="_3yZPA"><div class="_1QVfy _3UaCz"><span class=""><span></span><div class="_2cNrC" data-testid="menu-bar-status"><div aria-disabled="false" role="button" tabindex="0" class="_26lC3" data-tab="2" title="Status" aria-label="Status"><span data-testid="status-v3-unread" data-icon="status-v3-unread" class=""><svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"></path><path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></svg></span></div><span></span></div><div class="_2cNrC" data-testid="menu-bar-chat"><div aria-disabled="false" role="button" tabindex="0" class="_26lC3" data-tab="2" title="New chat" aria-label="New chat"><span data-testid="chat" data-icon="chat" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"></path></svg></span></div><span></span></div><div class="_2cNrC" data-testid="menu-bar-menu"><div aria-disabled="false" role="button" tabindex="0" class="_26lC3" data-tab="2" title="Menu" aria-label="Menu"><span data-testid="menu" data-icon="menu" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg></span></div><span></span></div></span></div></div></header><span class="_3z9_h"><div class="_2XcXo"><div class="_22XJC f2_qc"><div class="_384go"><span data-testid="alert-computer" data-icon="alert-computer" class=""><svg viewBox="0 0 48 48" width="48" height="48" class=""><path fill="currentColor" d="M24.154 2C11.919 2 2 11.924 2 24.165S11.919 46.33 24.154 46.33s22.154-9.924 22.154-22.165S36.389 2 24.154 2zm-.169 32.138L12.976 19.459c3.028-2.294 6.881-3.67 11.009-3.67 4.129 0 7.982 1.376 11.009 3.67L23.985 34.138zm-.945-5.65h1.981v-1.981H23.04v1.981zm0-3.962h1.981v-5.017H23.04v5.017z"></path></svg></span></div><div class="_1Yy79"><div class="_2z7gr">Computer not connected</div><div class="_2BxMU">Make sure your computer has an active Internet connection. <span class="f804f6gw"><button class="i5tg98hk f9ovudaz przvwfww gx1rr48f shdiholb phqmzxqs gtscxtjd ajgl1lbb thr4l2wc cc8mgx9x eta5aym1 d9802myq e4xiuwjv" type="button"><span class="edeob0r2 t94efhq2">Reconnect</span></button><span data-testid="chevron-right-text" data-icon="chevron-right-text" class="l7jjieqr hymafltn k6y3xtnu fewfhwl7"><svg viewBox="0 0 8 12" width="8" height="12" class=""><path fill="currentColor" d="m2.173 1 4.584 4.725-4.615 4.615-1.103-1.103 3.512-3.512L1 2.173 2.173 1z"></path></svg></span></span></div></div></div></div></span><div id="side" class="_1KDb8"><div tabindex="-1" class="uwk68"><div class="_3yWey _18wEy"><div class="tKJAr"><button data-testid="icon-search-morph" class="_28-cz _1lbUg" aria-label="Search or start new chat"><div class="_1KJ7A _2nifA"><span data-testid="back" data-icon="back" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z"></path></svg></span></div><div class="_1KJ7A bHvlO"><span data-testid="search" data-icon="search" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z"></path></svg></span></div></button><span></span><div data-testid="input-placeholder" class="_3Qnsr">Search or start new chat</div><div class="_16C8p"><div tabindex="-1" class="_1UWac _3hKpJ"><div data-testid="pluggable-input-placeholder" class="_2vbn4" style="visibility: visible;"></div><div data-testid="chat-list-search" title="Search input textbox" role="textbox" class="_13NKt copyable-text selectable-text" contenteditable="true" data-tab="3" dir="ltr"></div></div></div></div><button data-tab="4" aria-label="Unread chats filter" title="Unread chats filter" class="tt8xd2xn bugiwsl0 mpdn4nr2 fooq7fky"><div class="p357zi0d ktfrpxia nu7pwgvd ac2vgrno sap93d0t gndfcl4n ekdr8vow dhq51u3o s4k44ver g9p5wyxn i0tg5vk9 aoogvgrq o2zu3hjb"><span data-testid="filter" data-icon="filter" class=""><svg viewBox="0 0 24 24" width="20" height="20" preserveAspectRatio="xMidYMid meet" class=""><path fill="currentColor" d="M10 18.1h4v-2h-4v2zm-7-12v2h18v-2H3zm3 7h12v-2H6v2z"></path></svg></span></div></button></div></div><div class="_3Bc7H _20c87" id="pane-side"><button data-tab="4" class="_3hD9c" aria-label="Archived "><div data-testid="cell-frame-container" class="_2nY6U _1frFQ"><div class="_2EU3r"><div class="HONz8"><div class="p357zi0d ktfrpxia nu7pwgvd ac2vgrno sap93d0t gndfcl4n _3u7yy"><span data-testid="archived" data-icon="archived" class=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" class=""><path d="m18.54 3.23-1.39-1.68C16.88 1.21 16.47 1 16 1H4c-.47 0-.88.21-1.16.55L1.46 3.23C1.17 3.57 1 4.02 1 4.5V17c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4.5c0-.48-.17-.93-.46-1.27ZM4.24 3h11.52l.81.97H3.44l.8-.97ZM3 17V6h14v11H3Zm8.45-9h-2.9v3H6l4 4 4-4h-2.55V8Z" fill="currentColor"></path></svg></span></div></div></div><div class="_3OvU8"><div role="group" class="_3vPI2"><div class="zoWT4">Archived</div></div></div><div class="_3OvU8 _1BgCC"></div></div></button><div class="ln8gz9je ihvf49ua"><div class="cm280p3y kanlod6e kozhillt i86xphuw"></div></div><div tabindex="-1" data-tab="4"><div class="" data-testid="chat-list" style="pointer-events: auto;"><div aria-label="Chat list" class="_3uIPm WYyr1" role="grid" aria-rowcount="289" style="height: 20808px;"><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 288; transition: none 0s ease 0s; height: 72px; transform: translateY(936px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/260181572_1125585754953309_2787183600191646813_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVy0417vC1-yxS13WbR_hHq2WTjQSoXEvV3bVtKPyVGtDw&amp;oe=6335528A" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="ECE only boys exc. Bhular" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">ECE only boys exc. Bhular</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪Sticker‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">Abhinav</span><span>:&nbsp;</span><div class="_2tHs0 status-sticker _3Bn0t"><span data-testid="status-sticker" data-icon="status-sticker" class=""><svg viewBox="0 0 16 16" width="16" height="16" class=""><path fill="currentColor" d="M9.179 14.637c.061-.14.106-.29.135-.45.031-.171.044-.338.049-.543a9.05 9.05 0 0 0 .003-.233l.001-.067v-.072l.002-.216c.01-.364.032-1.205.08-1.473.052-.287.136-.538.255-.771a2.535 2.535 0 0 1 1.125-1.111 2.8 2.8 0 0 1 .786-.255c.27-.048 1.098-.07 1.487-.08l.152.001h.047l.325-.004a3.63 3.63 0 0 0 .554-.048 2.06 2.06 0 0 0 .494-.151 4.766 4.766 0 0 1-1.359 2.429 143.91 143.91 0 0 1-2.057 1.924 4.782 4.782 0 0 1-2.079 1.12zm-1.821.16-.474.012a9.023 9.023 0 0 1-1.879-.11 4.747 4.747 0 0 1-1.314-.428 4.376 4.376 0 0 1-1.123-.807 4.354 4.354 0 0 1-.816-1.11 4.584 4.584 0 0 1-.434-1.303 8.783 8.783 0 0 1-.12-1.356 29.156 29.156 0 0 1-.009-.617c-.002-.206-.002-.37-.002-.736v-.674l.001-.549.001-.182c.001-.223.004-.426.009-.62a8.69 8.69 0 0 1 .121-1.358c.087-.476.229-.903.434-1.301a4.399 4.399 0 0 1 1.936-1.916 4.7 4.7 0 0 1 1.315-.429 8.926 8.926 0 0 1 1.379-.12c.72-.009.989-.011 1.359-.011h.528c.896.003 1.143.005 1.366.011.55.015.959.046 1.371.12.482.085.913.226 1.314.428a4.396 4.396 0 0 1 1.937 1.915c.206.4.348.827.434 1.302.075.412.107.819.121 1.356.006.198.009.402.01.619v.024c0 .069-.001.132-.003.194a2.61 2.61 0 0 1-.033.391.902.902 0 0 1-.494.677 1.05 1.05 0 0 1-.29.094 2.734 2.734 0 0 1-.395.033l-.311.004h-.039l-.163-.001c-.453.012-1.325.036-1.656.096a3.81 3.81 0 0 0-1.064.348 3.541 3.541 0 0 0-.911.655c-.267.263-.49.566-.661.899-.166.324-.281.67-.351 1.054-.06.33-.085 1.216-.096 1.636l-.002.23v.069l-.001.067c0 .074-.001.143-.003.213-.004.158-.014.28-.033.388a.902.902 0 0 1-.494.676 1.054 1.054 0 0 1-.289.093 1.335 1.335 0 0 1-.176.024z"></path></svg></span></div><span dir="auto" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Sticker</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J" aria-label="Muted chat"><span data-testid="muted" data-icon="muted" class=""><svg viewBox="0 0 16 18" width="16" height="18" class=""><path fill="currentColor" d="M11.52 9.206c0-1.4-.778-2.567-1.944-3.111v1.711L11.52 9.75v-.544zm1.945 0c0 .7-.156 1.4-.389 2.022l1.167 1.167c.544-.933.778-2.1.778-3.267 0-3.344-2.333-6.144-5.444-6.844v1.633c2.255.778 3.888 2.8 3.888 5.289zm-11.433-7L1.02 3.217l3.656 3.656H1.02v4.667h3.111l3.889 3.889v-5.211l3.344 3.344c-.544.389-1.089.7-1.789.933v1.633a6.64 6.64 0 0 0 2.878-1.4l1.556 1.556 1.011-1.011-7-7-5.988-6.067zm5.988.778L6.387 4.617 8.02 6.25V2.984z"></path></svg></span></div><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="71 unread messages">71</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 287; transition: none 0s ease 0s; height: 72px; transform: translateY(864px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-group" data-icon="default-group" class=""><svg width="212" height="212" viewBox="0 0 212 212" fill="none" class=""><path class="background" d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25Z" fill="#DFE5E7"></path><path class="primary" clip-rule="evenodd" d="M102.282 77.286c0 10.671-8.425 19.285-18.94 19.285s-19.003-8.614-19.003-19.285C64.339 66.614 72.827 58 83.342 58s18.94 8.614 18.94 19.286Zm48.068 2.857c0 9.802-7.738 17.714-17.396 17.714-9.658 0-17.454-7.912-17.454-17.714s7.796-17.715 17.454-17.715c9.658 0 17.396 7.913 17.396 17.715Zm-67.01 29.285c-14.759 0-44.34 7.522-44.34 22.5v11.786c0 3.536 2.85 4.286 6.334 4.286h76.012c3.484 0 6.334-.75 6.334-4.286v-11.786c0-14.978-29.58-22.5-44.34-22.5Zm43.464 1.425c.903.018 1.681.033 2.196.033 14.759 0 45 6.064 45 21.043v9.642c0 3.536-2.85 6.429-6.334 6.429h-32.812c.697-1.993 1.141-4.179 1.141-6.429l-.245-10.5c0-9.561-5.614-13.213-11.588-17.1-1.39-.904-2.799-1.821-4.162-2.828a.843.843 0 0 1-.059-.073.594.594 0 0 0-.194-.184c1.596-.139 4.738-.078 7.057-.033Z"></path></svg></span></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="The CYM" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">The CYM</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪#main_container &gt; div.main_wrapper_dashboard &gt; header &gt; div &gt; div &gt; div &gt; div.dropdown.user-info.pull-right.logged-in‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">Arpit</span><span>:&nbsp;</span><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">#main_container &gt; div.main_wrapper_dashboard &gt; header &gt; div &gt; div &gt; div &gt; div.dropdown.user-info.pull-right.logged-in</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 286; transition: none 0s ease 0s; height: 72px; transform: translateY(792px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/305962138_822869288909664_848227310141243909_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVyiq6zr7Os_B4CGesCXb2QsDiBrspuC5lqcfZU9o8tVMw&amp;oe=6337238A" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Aravali" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Aravali</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪😔‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">+91 90068 61611</span><span>:&nbsp;</span><span dir="auto" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr"><img crossorigin="anonymous" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="😔" draggable="false" class="b83 emoji wa i0jNr" style="background-position: 0px -40px;"></span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J" aria-label="Muted chat"><span data-testid="muted" data-icon="muted" class=""><svg viewBox="0 0 16 18" width="16" height="18" class=""><path fill="currentColor" d="M11.52 9.206c0-1.4-.778-2.567-1.944-3.111v1.711L11.52 9.75v-.544zm1.945 0c0 .7-.156 1.4-.389 2.022l1.167 1.167c.544-.933.778-2.1.778-3.267 0-3.344-2.333-6.144-5.444-6.844v1.633c2.255.778 3.888 2.8 3.888 5.289zm-11.433-7L1.02 3.217l3.656 3.656H1.02v4.667h3.111l3.889 3.889v-5.211l3.344 3.344c-.544.389-1.089.7-1.789.933v1.633a6.64 6.64 0 0 0 2.878-1.4l1.556 1.556 1.011-1.011-7-7-5.988-6.067zm5.988.778L6.387 4.617 8.02 6.25V2.984z"></path></svg></span></div><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="18 unread messages">18</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 285; transition: none 0s ease 0s; height: 72px; transform: translateY(1152px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj"><div class="_2EU3r"><div class="HONz8"><div data-testid="chatlist-status-v3-ring"><div class="_3GlyB" style="height: 49px; width: 49px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/173063853_116461647847596_2988498521923522148_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxLyQ7W9-R1nezSGokNgEY6SLzd29gQu5W8tj_A9VaUNg&amp;oe=6334B0F2" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Vidit Sarin" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Vidit Sarin</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪Ohk‬" data-testid="last-msg-status"><div class="_2qo4q _3NIfV"><span data-testid="status-dblcheck" data-icon="status-dblcheck" class=""><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span></div><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Ohk</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 284; transition: none 0s ease 0s; height: 72px; transform: translateY(720px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj"><div class="_2EU3r"><div class="HONz8"><div data-testid="chatlist-status-v3-ring"><div class="_3GlyB" style="height: 49px; width: 49px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/297830098_447948213718806_8881186232536246493_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxxG7aMUfObHtZgAcl5vNJoJbHs6Z-sgSqORGbTn2ZlPQ&amp;oe=6336DCB1" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Divyam Sheokand" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Divyam Sheokand</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪Photo‬" data-testid="last-msg-status"><div class="_2qo4q _3NIfV"><span data-testid="status-dblcheck" data-icon="status-dblcheck" class=""><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span></div><div class="_2tHs0 status-image _3Bn0t"><span data-testid="status-image" data-icon="status-image" class=""><svg viewBox="0 0 16 20" width="16" height="20" class=""><path fill="currentColor" d="M13.822 4.668H7.14l-1.068-1.09a1.068 1.068 0 0 0-.663-.278H3.531c-.214 0-.51.128-.656.285L1.276 5.296c-.146.157-.266.46-.266.675v1.06l-.001.003v6.983c0 .646.524 1.17 1.17 1.17h11.643a1.17 1.17 0 0 0 1.17-1.17v-8.18a1.17 1.17 0 0 0-1.17-1.169zm-5.982 8.63a3.395 3.395 0 1 1 0-6.79 3.395 3.395 0 0 1 0 6.79zm0-5.787a2.392 2.392 0 1 0 0 4.784 2.392 2.392 0 0 0 0-4.784z"></path></svg></span></div><span dir="auto" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Photo</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 282; transition: none 0s ease 0s; height: 72px; transform: translateY(1728px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-group" data-icon="default-group" class=""><svg width="212" height="212" viewBox="0 0 212 212" fill="none" class=""><path class="background" d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25Z" fill="#DFE5E7"></path><path class="primary" clip-rule="evenodd" d="M102.282 77.286c0 10.671-8.425 19.285-18.94 19.285s-19.003-8.614-19.003-19.285C64.339 66.614 72.827 58 83.342 58s18.94 8.614 18.94 19.286Zm48.068 2.857c0 9.802-7.738 17.714-17.396 17.714-9.658 0-17.454-7.912-17.454-17.714s7.796-17.715 17.454-17.715c9.658 0 17.396 7.913 17.396 17.715Zm-67.01 29.285c-14.759 0-44.34 7.522-44.34 22.5v11.786c0 3.536 2.85 4.286 6.334 4.286h76.012c3.484 0 6.334-.75 6.334-4.286v-11.786c0-14.978-29.58-22.5-44.34-22.5Zm43.464 1.425c.903.018 1.681.033 2.196.033 14.759 0 45 6.064 45 21.043v9.642c0 3.536-2.85 6.429-6.334 6.429h-32.812c.697-1.993 1.141-4.179 1.141-6.429l-.245-10.5c0-9.561-5.614-13.213-11.588-17.1-1.39-.904-2.799-1.821-4.162-2.828a.843.843 0 0 1-.059-.073.594.594 0 0 0-.194-.184c1.596-.139 4.738-.078 7.057-.033Z"></path></svg></span></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Shivalik Hostel" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Shivalik Hostel</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪Lenovo  idea pad laptop charger needs urgently if any one have pm me‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">Moksh</span><span>:&nbsp;</span><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Lenovo&nbsp;&nbsp;idea pad laptop charger needs urgently if any one have pm me</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J" aria-label="Muted chat"><span data-testid="muted" data-icon="muted" class=""><svg viewBox="0 0 16 18" width="16" height="18" class=""><path fill="currentColor" d="M11.52 9.206c0-1.4-.778-2.567-1.944-3.111v1.711L11.52 9.75v-.544zm1.945 0c0 .7-.156 1.4-.389 2.022l1.167 1.167c.544-.933.778-2.1.778-3.267 0-3.344-2.333-6.144-5.444-6.844v1.633c2.255.778 3.888 2.8 3.888 5.289zm-11.433-7L1.02 3.217l3.656 3.656H1.02v4.667h3.111l3.889 3.889v-5.211l3.344 3.344c-.544.389-1.089.7-1.789.933v1.633a6.64 6.64 0 0 0 2.878-1.4l1.556 1.556 1.011-1.011-7-7-5.988-6.067zm5.988.778L6.387 4.617 8.02 6.25V2.984z"></path></svg></span></div><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="11 unread messages">11</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 281; transition: none 0s ease 0s; height: 72px; transform: translateY(1656px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-group" data-icon="default-group" class=""><svg width="212" height="212" viewBox="0 0 212 212" fill="none" class=""><path class="background" d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25Z" fill="#DFE5E7"></path><path class="primary" clip-rule="evenodd" d="M102.282 77.286c0 10.671-8.425 19.285-18.94 19.285s-19.003-8.614-19.003-19.285C64.339 66.614 72.827 58 83.342 58s18.94 8.614 18.94 19.286Zm48.068 2.857c0 9.802-7.738 17.714-17.396 17.714-9.658 0-17.454-7.912-17.454-17.714s7.796-17.715 17.454-17.715c9.658 0 17.396 7.913 17.396 17.715Zm-67.01 29.285c-14.759 0-44.34 7.522-44.34 22.5v11.786c0 3.536 2.85 4.286 6.334 4.286h76.012c3.484 0 6.334-.75 6.334-4.286v-11.786c0-14.978-29.58-22.5-44.34-22.5Zm43.464 1.425c.903.018 1.681.033 2.196.033 14.759 0 45 6.064 45 21.043v9.642c0 3.536-2.85 6.429-6.334 6.429h-32.812c.697-1.993 1.141-4.179 1.141-6.429l-.245-10.5c0-9.561-5.614-13.213-11.588-17.1-1.39-.904-2.799-1.821-4.162-2.828a.843.843 0 0 1-.059-.073.594.594 0 0 0-.194-.184c1.596-.139 4.738-.078 7.057-.033Z"></path></svg></span></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Aravali Hostel Official" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Aravali Hostel Official</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪*Important*‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">+91 94678 57100</span><span>:&nbsp;</span><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr"><strong class="i0jNr">Important</strong></span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="2 unread messages">2</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 280; transition: none 0s ease 0s; height: 72px; transform: translateY(1440px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj"><div class="_2EU3r"><div class="HONz8"><div data-testid="chatlist-status-v3-ring"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-user" data-icon="default-user" class=""><svg viewBox="0 0 212 212" width="212" height="212" class=""><path fill="#DFE5E7" class="background" d="M106.251.5C164.653.5 212 47.846 212 106.25S164.653 212 106.25 212C47.846 212 .5 164.654.5 106.25S47.846.5 106.251.5z"></path><g fill="#FFF"><path class="primary" d="M173.561 171.615a62.767 62.767 0 0 0-2.065-2.955 67.7 67.7 0 0 0-2.608-3.299 70.112 70.112 0 0 0-3.184-3.527 71.097 71.097 0 0 0-5.924-5.47 72.458 72.458 0 0 0-10.204-7.026 75.2 75.2 0 0 0-5.98-3.055c-.062-.028-.118-.059-.18-.087-9.792-4.44-22.106-7.529-37.416-7.529s-27.624 3.089-37.416 7.529c-.338.153-.653.318-.985.474a75.37 75.37 0 0 0-6.229 3.298 72.589 72.589 0 0 0-9.15 6.395 71.243 71.243 0 0 0-5.924 5.47 70.064 70.064 0 0 0-3.184 3.527 67.142 67.142 0 0 0-2.609 3.299 63.292 63.292 0 0 0-2.065 2.955 56.33 56.33 0 0 0-1.447 2.324c-.033.056-.073.119-.104.174a47.92 47.92 0 0 0-1.07 1.926c-.559 1.068-.818 1.678-.818 1.678v.398c18.285 17.927 43.322 28.985 70.945 28.985 27.678 0 52.761-11.103 71.055-29.095v-.289s-.619-1.45-1.992-3.778a58.346 58.346 0 0 0-1.446-2.322zM106.002 125.5c2.645 0 5.212-.253 7.68-.737a38.272 38.272 0 0 0 3.624-.896 37.124 37.124 0 0 0 5.12-1.958 36.307 36.307 0 0 0 6.15-3.67 35.923 35.923 0 0 0 9.489-10.48 36.558 36.558 0 0 0 2.422-4.84 37.051 37.051 0 0 0 1.716-5.25c.299-1.208.542-2.443.725-3.701.275-1.887.417-3.827.417-5.811s-.142-3.925-.417-5.811a38.734 38.734 0 0 0-1.215-5.494 36.68 36.68 0 0 0-3.648-8.298 35.923 35.923 0 0 0-9.489-10.48 36.347 36.347 0 0 0-6.15-3.67 37.124 37.124 0 0 0-5.12-1.958 37.67 37.67 0 0 0-3.624-.896 39.875 39.875 0 0 0-7.68-.737c-21.162 0-37.345 16.183-37.345 37.345 0 21.159 16.183 37.342 37.345 37.342z"></path></g></svg></span></div></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="vishvjeet" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">vishvjeet</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪Photo‬" data-testid="last-msg-status"><div class="_2tHs0 status-image _3Bn0t"><span data-testid="status-image" data-icon="status-image" class=""><svg viewBox="0 0 16 20" width="16" height="20" class=""><path fill="currentColor" d="M13.822 4.668H7.14l-1.068-1.09a1.068 1.068 0 0 0-.663-.278H3.531c-.214 0-.51.128-.656.285L1.276 5.296c-.146.157-.266.46-.266.675v1.06l-.001.003v6.983c0 .646.524 1.17 1.17 1.17h11.643a1.17 1.17 0 0 0 1.17-1.17v-8.18a1.17 1.17 0 0 0-1.17-1.169zm-5.982 8.63a3.395 3.395 0 1 1 0-6.79 3.395 3.395 0 0 1 0 6.79zm0-5.787a2.392 2.392 0 1 0 0 4.784 2.392 2.392 0 0 0 0-4.784z"></path></svg></span></div><span dir="auto" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Photo</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 279; transition: none 0s ease 0s; height: 72px; transform: translateY(1368px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-group" data-icon="default-group" class=""><svg width="212" height="212" viewBox="0 0 212 212" fill="none" class=""><path class="background" d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25Z" fill="#DFE5E7"></path><path class="primary" clip-rule="evenodd" d="M102.282 77.286c0 10.671-8.425 19.285-18.94 19.285s-19.003-8.614-19.003-19.285C64.339 66.614 72.827 58 83.342 58s18.94 8.614 18.94 19.286Zm48.068 2.857c0 9.802-7.738 17.714-17.396 17.714-9.658 0-17.454-7.912-17.454-17.714s7.796-17.715 17.454-17.715c9.658 0 17.396 7.913 17.396 17.715Zm-67.01 29.285c-14.759 0-44.34 7.522-44.34 22.5v11.786c0 3.536 2.85 4.286 6.334 4.286h76.012c3.484 0 6.334-.75 6.334-4.286v-11.786c0-14.978-29.58-22.5-44.34-22.5Zm43.464 1.425c.903.018 1.681.033 2.196.033 14.759 0 45 6.064 45 21.043v9.642c0 3.536-2.85 6.429-6.334 6.429h-32.812c.697-1.993 1.141-4.179 1.141-6.429l-.245-10.5c0-9.561-5.614-13.213-11.588-17.1-1.39-.904-2.799-1.821-4.162-2.828a.843.843 0 0 1-.059-.073.594.594 0 0 0-.194-.184c1.596-.139 4.738-.078 7.057-.033Z"></path></svg></span></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Off campus 2025 DSA N DEV" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Off campus 2025 DSA N DEV</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪*Women only*🫡
+*Batch 2024/2025*
+
+https://www.linkedin.com/posts/pranitha-sridhar_coding-codesscafe-womenintech-activity-6976794832031629312-zAHH
+
+https://docs.google.com/forms/d/e/1FAIpQLScatcki1ehsMGmN0kP7FdZFYPpMhe87J8cvr0ca2p-NsMZcOg/viewform‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">Vansh</span><span>:&nbsp;</span><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr"><strong class="i0jNr">Women only</strong><img crossorigin="anonymous" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="🫡" draggable="false" class="b133 emoji wa i0jNr" style="background-position: -60px -20px;">
+<strong class="i0jNr">Batch 2024/2025</strong>
+
+https://www.linkedin.com/posts/pranitha-sridhar_coding-codesscafe-womenintech-activity-6976794832031629312-zAHH
+
+https://docs.google.com/forms/d/e/1FAIpQLScatcki1ehsMGmN0kP7FdZFYPpMhe87J8cvr0ca2p-NsMZcOg/viewform</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="2 unread messages">2</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 278; transition: none 0s ease 0s; height: 72px; transform: translateY(1584px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj"><div class="_2EU3r"><div class="HONz8"><div data-testid="chatlist-status-v3-ring"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-user" data-icon="default-user" class=""><svg viewBox="0 0 212 212" width="212" height="212" class=""><path fill="#DFE5E7" class="background" d="M106.251.5C164.653.5 212 47.846 212 106.25S164.653 212 106.25 212C47.846 212 .5 164.654.5 106.25S47.846.5 106.251.5z"></path><g fill="#FFF"><path class="primary" d="M173.561 171.615a62.767 62.767 0 0 0-2.065-2.955 67.7 67.7 0 0 0-2.608-3.299 70.112 70.112 0 0 0-3.184-3.527 71.097 71.097 0 0 0-5.924-5.47 72.458 72.458 0 0 0-10.204-7.026 75.2 75.2 0 0 0-5.98-3.055c-.062-.028-.118-.059-.18-.087-9.792-4.44-22.106-7.529-37.416-7.529s-27.624 3.089-37.416 7.529c-.338.153-.653.318-.985.474a75.37 75.37 0 0 0-6.229 3.298 72.589 72.589 0 0 0-9.15 6.395 71.243 71.243 0 0 0-5.924 5.47 70.064 70.064 0 0 0-3.184 3.527 67.142 67.142 0 0 0-2.609 3.299 63.292 63.292 0 0 0-2.065 2.955 56.33 56.33 0 0 0-1.447 2.324c-.033.056-.073.119-.104.174a47.92 47.92 0 0 0-1.07 1.926c-.559 1.068-.818 1.678-.818 1.678v.398c18.285 17.927 43.322 28.985 70.945 28.985 27.678 0 52.761-11.103 71.055-29.095v-.289s-.619-1.45-1.992-3.778a58.346 58.346 0 0 0-1.446-2.322zM106.002 125.5c2.645 0 5.212-.253 7.68-.737a38.272 38.272 0 0 0 3.624-.896 37.124 37.124 0 0 0 5.12-1.958 36.307 36.307 0 0 0 6.15-3.67 35.923 35.923 0 0 0 9.489-10.48 36.558 36.558 0 0 0 2.422-4.84 37.051 37.051 0 0 0 1.716-5.25c.299-1.208.542-2.443.725-3.701.275-1.887.417-3.827.417-5.811s-.142-3.925-.417-5.811a38.734 38.734 0 0 0-1.215-5.494 36.68 36.68 0 0 0-3.648-8.298 35.923 35.923 0 0 0-9.489-10.48 36.347 36.347 0 0 0-6.15-3.67 37.124 37.124 0 0 0-5.12-1.958 37.67 37.67 0 0 0-3.624-.896 39.875 39.875 0 0 0-7.68-.737c-21.162 0-37.345 16.183-37.345 37.345 0 21.159 16.183 37.342 37.345 37.342z"></path></g></svg></span></div></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Mayank" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Mayank</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪Ohk‬" data-testid="last-msg-status"><div class="_2qo4q _3NIfV"><span data-testid="status-dblcheck" data-icon="status-dblcheck" class=""><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span></div><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Ohk</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 277; transition: none 0s ease 0s; height: 72px; transform: translateY(1512px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-group" data-icon="default-group" class=""><svg width="212" height="212" viewBox="0 0 212 212" fill="none" class=""><path class="background" d="M105.946.25C164.318.25 211.64 47.596 211.64 106s-47.322 105.75-105.695 105.75C47.571 211.75.25 164.404.25 106S47.571.25 105.946.25Z" fill="#DFE5E7"></path><path class="primary" clip-rule="evenodd" d="M102.282 77.286c0 10.671-8.425 19.285-18.94 19.285s-19.003-8.614-19.003-19.285C64.339 66.614 72.827 58 83.342 58s18.94 8.614 18.94 19.286Zm48.068 2.857c0 9.802-7.738 17.714-17.396 17.714-9.658 0-17.454-7.912-17.454-17.714s7.796-17.715 17.454-17.715c9.658 0 17.396 7.913 17.396 17.715Zm-67.01 29.285c-14.759 0-44.34 7.522-44.34 22.5v11.786c0 3.536 2.85 4.286 6.334 4.286h76.012c3.484 0 6.334-.75 6.334-4.286v-11.786c0-14.978-29.58-22.5-44.34-22.5Zm43.464 1.425c.903.018 1.681.033 2.196.033 14.759 0 45 6.064 45 21.043v9.642c0 3.536-2.85 6.429-6.334 6.429h-32.812c.697-1.993 1.141-4.179 1.141-6.429l-.245-10.5c0-9.561-5.614-13.213-11.588-17.1-1.39-.904-2.799-1.821-4.162-2.828a.843.843 0 0 1-.059-.073.594.594 0 0 0-.194-.184c1.596-.139 4.738-.078 7.057-.033Z"></path></svg></span></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="SAASC 2025 Unofficial" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">SAASC 2025 Unofficial</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪This message was deleted‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">+91 76003 65162</span><span>:&nbsp;</span><div class="_2tHs0 recalled"><span data-testid="recalled" data-icon="recalled" class=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M7.759 6.43a7 7 0 0 1 9.81 9.81l-9.81-9.81ZM6.357 7.858a7 7 0 0 0 9.786 9.786L6.357 7.857ZM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z" fill="currentColor"></path></svg></span></div><span dir="auto" class="_1ZqY2 ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">This message was deleted</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J" aria-label="Muted chat"><span data-testid="muted" data-icon="muted" class=""><svg viewBox="0 0 16 18" width="16" height="18" class=""><path fill="currentColor" d="M11.52 9.206c0-1.4-.778-2.567-1.944-3.111v1.711L11.52 9.75v-.544zm1.945 0c0 .7-.156 1.4-.389 2.022l1.167 1.167c.544-.933.778-2.1.778-3.267 0-3.344-2.333-6.144-5.444-6.844v1.633c2.255.778 3.888 2.8 3.888 5.289zm-11.433-7L1.02 3.217l3.656 3.656H1.02v4.667h3.111l3.889 3.889v-5.211l3.344 3.344c-.544.389-1.089.7-1.789.933v1.633a6.64 6.64 0 0 0 2.878-1.4l1.556 1.556 1.011-1.011-7-7-5.988-6.067zm5.988.778L6.387 4.617 8.02 6.25V2.984z"></path></svg></span></div><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="286 unread messages">286</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 276; transition: none 0s ease 0s; height: 72px; transform: translateY(1296px);"><div tabindex="0" aria-selected="true" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _2_TVt"><div class="_2EU3r"><div class="HONz8"><div data-testid="chatlist-status-v3-ring"><div class="_3GlyB" style="height: 49px; width: 49px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/147460017_329935912596568_8759729673134899229_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVyXmpSruON4cmyS_97BXosM6gwIJsehS90U_1_Dnv2otg&amp;oe=633525CD" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Arpit Singhal" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Arpit Singhal</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;style&gt;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #293649f5;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: &quot;&quot;;
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;about-section&quot;&gt;
+  &lt;h1&gt;About Us !!&lt;/h1&gt;
+  &lt;p&gt;We aim at providing fast and free document uploading website and also you can share documents with your friends .&lt;/p&gt;
+  &lt;p&gt;
+        &lt;img src=&quot;https://media3.giphy.com/media/DGWAx8d3IkICs/200.webp?cid=ecf05e47tp5t8t9ng9elhd7wklc8xygwi6sd9046r52elubb&amp;rid=200.webp&amp;ct=g&quot; alt=&quot;Cheers !!!!&quot;&gt;
+  &lt;/p&gt;
+  &lt;!-- &lt;p&gt;Resize the browser window to see that this page is responsive by the way.&lt;/p&gt; --&gt;
+&lt;/div&gt;
+
+&lt;h2 style=&quot;text-align:center&quot;&gt;Our Team&lt;/h2&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;img src=&quot;Arpit.jpeg&quot; alt=&quot;Arpit Singhal&quot; style=&quot;width:100%&quot; style=&quot;height: 40%;&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2&gt;Arpit Singhal&lt;/h2&gt;
+        &lt;p class=&quot;title&quot;&gt;ECE 2nd Year Student&lt;/p&gt;
+        &lt;p&gt;Arpit is frontend developer and writes most part of the frontend code of the website&lt;/p&gt;
+        &lt;p&gt;singhalarpit08@gmail.com&lt;/p&gt;
+        &lt;p&gt;&lt;button class=&quot;button&quot;&gt;Contact&lt;/button&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;img src=&quot;Saket.jpg&quot; alt=&quot;Saket&quot; style=&quot;width:100%&quot; style=&quot;height:40%&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2&gt;Saket Ahlawat&lt;/h2&gt;
+        &lt;p class=&quot;title&quot;&gt;ECE 2nd Year Student&lt;/p&gt;
+        &lt;p&gt;Saket is the full stack developer and has a huge contribution in the frontend and the backend code of the website &lt;/p&gt;
+        &lt;p&gt;saketahlawat661@gmail.com&lt;/p&gt;
+        &lt;p&gt;&lt;button class=&quot;button&quot;&gt;Contact&lt;/button&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;img src=&quot;Chirag.jpeg&quot; alt=&quot;Chirag&quot; style=&quot;width:100%&quot; style=&quot;height: 40%;&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2&gt;Chirag&lt;/h2&gt;
+        &lt;p class=&quot;title&quot;&gt;ECE 2nd Year Student&lt;/p&gt;
+        &lt;p&gt;Chirag is a fullstack developer and has contributed in both frontend and the backend&lt;/p&gt;
+        &lt;p&gt;chiraggupta2019@gmail.com&lt;/p&gt;
+        &lt;p&gt;&lt;button class=&quot;button&quot;&gt;Contact&lt;/button&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;img src=&quot;Vishwjeet.jpeg&quot; alt=&quot;Vishvjeet&quot; style=&quot;width:100%&quot; style=&quot;height: 40%;&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h2&gt;Vishvjeet Thakur&lt;/h2&gt;
+        &lt;p class=&quot;title&quot;&gt;ECE 2nd Year Student&lt;/p&gt;
+        &lt;p&gt;Vishwjeet is a backend developer and has contributed in most of the backend code of the website&lt;/p&gt;
+        &lt;p&gt;vishwjeetthakur995@gmail.com&lt;/p&gt;
+        &lt;p&gt;&lt;button class=&quot;button&quot;&gt;Contact&lt;/button&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;‬" data-testid="last-msg-status"><div class="_2qo4q"><span data-testid="status-dblcheck" data-icon="status-dblcheck" class=""><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span></div><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;style&gt;
+body {
+&nbsp;&nbsp;font-family: Arial, Helvetica, sans-serif;
+&nbsp;&nbsp;margin: 0;
+}
+
+html {
+&nbsp;&nbsp;box-sizing: border-box;
+}
+
+*, *:before, *:after {
+&nbsp;&nbsp;box-sizing: inherit;
+}
+
+.column {
+&nbsp;&nbsp;float: left;
+&nbsp;&nbsp;width: 25%;
+&nbsp;&nbsp;margin-bottom: 16px;
+&nbsp;&nbsp;padding: 0 8px;
+}
+
+.card {
+&nbsp;&nbsp;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+&nbsp;&nbsp;margin: 8px;
+}
+
+.about-section {
+&nbsp;&nbsp;padding: 50px;
+&nbsp;&nbsp;text-align: center;
+&nbsp;&nbsp;background-color: #293649f5;
+&nbsp;&nbsp;color: white;
+}
+
+.container {
+&nbsp;&nbsp;padding: 0 16px;
+}
+
+.container::after, .row::after {
+&nbsp;&nbsp;content: "";
+&nbsp;&nbsp;clear: both;
+&nbsp;&nbsp;display: table;
+}
+
+.title {
+&nbsp;&nbsp;color: grey;
+}
+
+.button {
+&nbsp;&nbsp;border: none;
+&nbsp;&nbsp;outline: 0;
+&nbsp;&nbsp;display: inline-block;
+&nbsp;&nbsp;padding: 8px;
+&nbsp;&nbsp;color: white;
+&nbsp;&nbsp;background-color: #000;
+&nbsp;&nbsp;text-align: center;
+&nbsp;&nbsp;cursor: pointer;
+&nbsp;&nbsp;width: 100%;
+}
+
+.button:hover {
+&nbsp;&nbsp;background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+&nbsp;&nbsp;.column {
+&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;
+&nbsp;&nbsp;}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="about-section"&gt;
+&nbsp;&nbsp;&lt;h1&gt;About Us !!&lt;/h1&gt;
+&nbsp;&nbsp;&lt;p&gt;We aim at providing fast and free document uploading website and also you can share documents with your friends .&lt;/p&gt;
+&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://media3.giphy.com/media/DGWAx8d3IkICs/200.webp?cid=ecf05e47tp5t8t9ng9elhd7wklc8xygwi6sd9046r52elubb&amp;rid=200.webp&amp;ct=g" alt="Cheers !!!!"&gt;
+&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&lt;!-- &lt;p&gt;Resize the browser window to see that this page is responsive by the way.&lt;/p&gt; --&gt;
+&lt;/div&gt;
+
+&lt;h2 style="text-align:center"&gt;Our Team&lt;/h2&gt;
+&lt;div class="row"&gt;
+&nbsp;&nbsp;&lt;div class="column"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Arpit.jpeg" alt="Arpit Singhal" style="width:100%" style="height: 40%;"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Arpit Singhal&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="title"&gt;ECE 2nd Year Student&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Arpit is frontend developer and writes most part of the frontend code of the website&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;singhalarpit08@gmail.com&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;button class="button"&gt;Contact&lt;/button&gt;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&lt;div class="column"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Saket.jpg" alt="Saket" style="width:100%" style="height:40%"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Saket Ahlawat&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="title"&gt;ECE 2nd Year Student&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Saket is the full stack developer and has a huge contribution in the frontend and the backend code of the website &lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;saketahlawat661@gmail.com&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;button class="button"&gt;Contact&lt;/button&gt;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&lt;div class="column"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Chirag.jpeg" alt="Chirag" style="width:100%" style="height: 40%;"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Chirag&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="title"&gt;ECE 2nd Year Student&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Chirag is a fullstack developer and has contributed in both frontend and the backend&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;chiraggupta2019@gmail.com&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;button class="button"&gt;Contact&lt;/button&gt;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&lt;div class="column"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Vishwjeet.jpeg" alt="Vishvjeet" style="width:100%" style="height: 40%;"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Vishvjeet Thakur&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="title"&gt;ECE 2nd Year Student&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Vishwjeet is a backend developer and has contributed in most of the backend code of the website&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;vishwjeetthakur995@gmail.com&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;button class="button"&gt;Contact&lt;/button&gt;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 275; transition: none 0s ease 0s; height: 72px; transform: translateY(1224px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div data-testid="chatlist-status-v3-ring"><div class="_3GlyB" style="height: 49px; width: 49px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/298890253_436593398422837_3067693857812023548_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVzh6UgUdFRcLqDeNAyIjQmzBGBacUffoHV13TliQfHtog&amp;oe=63365F35" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="+91 87085 19565" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">+91 87085 19565</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪Missed video call‬" data-testid="last-msg-status"><div class="_2tHs0 status-miss_video _3Bn0t _3HpRC"><span data-testid="status-miss_video" data-icon="status-miss_video" class=""><svg viewBox="0 0 16 18" width="16" height="18" class=""><path fill="currentColor" d="M9.4 5.8H2.8c-1 0-1.8.8-1.8 1.8v5.6c0 1 .8 1.8 1.8 1.8h6.6c1 0 1.8-.8 1.8-1.8V7.6c0-1-.8-1.8-1.8-1.8zm-.7 2.7-3.2 3.2h1.7c.2 0 .3.1.3.3v.4c0 .2-.1.3-.3.3H4.1c-.2 0-.3-.1-.3-.3V9.3c0-.2.1-.3.3-.3h.4c.2 0 .3.1.3.3V11L8 7.8c.1-.1.3-.1.5 0l.2.3c.1.1.1.3 0 .4zm3.9.1c-.1.1-.2.3-.2.4v2.7c0 .2.1.3.2.4l2.4 1.7V7l-2.4 1.6z"></path></svg></span></div><span dir="auto" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Missed video call</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="3 unread messages">3</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 273; transition: none 0s ease 0s; height: 72px; transform: translateY(1080px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj _3C4Vf"><div class="_2EU3r"><div class="HONz8"><div class="_3GlyB" style="height: 49px; width: 49px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/305155681_856865091961152_5418639965815106560_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxF9TXg8zEddMLiyKwX_zEnTPg8ai5sL1cz3TYrcPiyPQ&amp;oe=63345C05" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="ECE 2025 (Official)" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">ECE 2025 (Official)</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪*Sports Groups PEC &#39; 23*
+
+Athletics - https://chat.whatsapp.com/BW9jWYar3P9G42O83XB8ln
+
+Squash - https://chat.whatsapp.com/D4ysmDpADeDHxm1GQrwsGY
+
+Kabaddi - https://chat.whatsapp.com/H3LCpSkaf7HLs3yXaKJAFD
+
+Chess - https://chat.whatsapp.com/HlMLDtyHfLa9sh2vaFwAzr
+
+Badminton - https://chat.whatsapp.com/FGUhV2jQZALDXgMcQCl6Vr
+
+Basketball - https://chat.whatsapp.com/El9DJcVlSfr9Z5C0LMrXJr
+
+Volleyball - https://chat.whatsapp.com/JRZiLmtDOwtDSlf8GSIMro
+
+Lawn Tennis - https://chat.whatsapp.com/INg17u1bjouCVntsAhGdrb
+
+TT - https://chat.whatsapp.com/GSKwgUCLOtz8F1PJxGGhfM
+
+Football - https://chat.whatsapp.com/FQw3wNhliRiFhCTu0kOpbE
+
+Cricket - https://chat.whatsapp.com/CuG2GACftM7HisN2baeHj6‬" data-testid="last-msg-status"><span dir="auto" class="l7jjieqr i0jNr">Soumil</span><span>:&nbsp;</span><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr"><strong class="i0jNr">Sports Groups PEC ' 23</strong>
+
+Athletics - https://chat.whatsapp.com/BW9jWYar3P9G42O83XB8ln
+
+Squash - https://chat.whatsapp.com/D4ysmDpADeDHxm1GQrwsGY
+
+Kabaddi - https://chat.whatsapp.com/H3LCpSkaf7HLs3yXaKJAFD
+
+Chess - https://chat.whatsapp.com/HlMLDtyHfLa9sh2vaFwAzr
+
+Badminton - https://chat.whatsapp.com/FGUhV2jQZALDXgMcQCl6Vr
+
+Basketball - https://chat.whatsapp.com/El9DJcVlSfr9Z5C0LMrXJr
+
+Volleyball - https://chat.whatsapp.com/JRZiLmtDOwtDSlf8GSIMro
+
+Lawn Tennis - https://chat.whatsapp.com/INg17u1bjouCVntsAhGdrb
+
+TT - https://chat.whatsapp.com/GSKwgUCLOtz8F1PJxGGhfM
+
+Football - https://chat.whatsapp.com/FQw3wNhliRiFhCTu0kOpbE
+
+Cricket - https://chat.whatsapp.com/CuG2GACftM7HisN2baeHj6</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span><div class="_1pJ9J"><span class="l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt" aria-label="5 unread messages">5</span></div></span><span></span><span></span></div></div></div></div></div></div><div class="lhggkp7q ln8gz9je rx9719la" style="z-index: 272; transition: none 0s ease 0s; height: 72px; transform: translateY(1008px);"><div tabindex="-1" aria-selected="false" role="row"><div data-testid="cell-frame-container" class="_2nY6U vq6sj"><div class="_2EU3r"><div class="HONz8"><div data-testid="chatlist-status-v3-ring"><div class="_3GlyB" style="height: 49px; width: 49px;"><div class="_1lPgH"><span data-testid="default-user" data-icon="default-user" class=""><svg viewBox="0 0 212 212" width="212" height="212" class=""><path fill="#DFE5E7" class="background" d="M106.251.5C164.653.5 212 47.846 212 106.25S164.653 212 106.25 212C47.846 212 .5 164.654.5 106.25S47.846.5 106.251.5z"></path><g fill="#FFF"><path class="primary" d="M173.561 171.615a62.767 62.767 0 0 0-2.065-2.955 67.7 67.7 0 0 0-2.608-3.299 70.112 70.112 0 0 0-3.184-3.527 71.097 71.097 0 0 0-5.924-5.47 72.458 72.458 0 0 0-10.204-7.026 75.2 75.2 0 0 0-5.98-3.055c-.062-.028-.118-.059-.18-.087-9.792-4.44-22.106-7.529-37.416-7.529s-27.624 3.089-37.416 7.529c-.338.153-.653.318-.985.474a75.37 75.37 0 0 0-6.229 3.298 72.589 72.589 0 0 0-9.15 6.395 71.243 71.243 0 0 0-5.924 5.47 70.064 70.064 0 0 0-3.184 3.527 67.142 67.142 0 0 0-2.609 3.299 63.292 63.292 0 0 0-2.065 2.955 56.33 56.33 0 0 0-1.447 2.324c-.033.056-.073.119-.104.174a47.92 47.92 0 0 0-1.07 1.926c-.559 1.068-.818 1.678-.818 1.678v.398c18.285 17.927 43.322 28.985 70.945 28.985 27.678 0 52.761-11.103 71.055-29.095v-.289s-.619-1.45-1.992-3.778a58.346 58.346 0 0 0-1.446-2.322zM106.002 125.5c2.645 0 5.212-.253 7.68-.737a38.272 38.272 0 0 0 3.624-.896 37.124 37.124 0 0 0 5.12-1.958 36.307 36.307 0 0 0 6.15-3.67 35.923 35.923 0 0 0 9.489-10.48 36.558 36.558 0 0 0 2.422-4.84 37.051 37.051 0 0 0 1.716-5.25c.299-1.208.542-2.443.725-3.701.275-1.887.417-3.827.417-5.811s-.142-3.925-.417-5.811a38.734 38.734 0 0 0-1.215-5.494 36.68 36.68 0 0 0-3.648-8.298 35.923 35.923 0 0 0-9.489-10.48 36.347 36.347 0 0 0-6.15-3.67 37.124 37.124 0 0 0-5.12-1.958 37.67 37.67 0 0 0-3.624-.896 39.875 39.875 0 0 0-7.68-.737c-21.162 0-37.345 16.183-37.345 37.345 0 21.159 16.183 37.342 37.345 37.342z"></path></g></svg></span></div></div></div></div></div><div class="_3OvU8"><div role="gridcell" aria-colindex="2" class="_3vPI2"><div class="zoWT4"><span dir="auto" title="Aman Redhu" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Aman Redhu</span></div><div class="_1i_wG">yesterday</div></div><div class="_37FrU"><div class="_1qB8f"><span class="Hy9nV" title="‪ye channel h‬" data-testid="last-msg-status"><div class="_2qo4q _3NIfV"><span data-testid="status-dblcheck" data-icon="status-dblcheck" class=""><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span></div><span dir="ltr" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">ye channel h</span></span></div><div role="gridcell" aria-colindex="1" class="_1i_wG"><span></span><span></span><span></span></div></div></div></div></div></div></div></div></div><div class="cm280p3y p357zi0d gndfcl4n ac2vgrno eg3lofc5 gqi0zhd6 pz0xruzv nzcjdldu emrlamx0 swyb62mu tviruh8d"><div class="qfejxiq4 ac2vgrno p357zi0d"><div class="dsh4tgtl e1gr2w1z bsvz8e3l hmy10g0s cw3vfol9"><span data-testid="lock-small-v2" data-icon="lock-small-v2" class=""><svg width="13" height="12" viewBox="0 0 13 12" fill="none" preserveAspectRatio="xMidYMid meet" class="b9l0eqez kjemk6od l7jjieqr ms8wnqe5"><path d="M9.54 3.467a3.12 3.12 0 0 0-.437-1.62A3.164 3.164 0 0 0 7.927.67 3.107 3.107 0 0 0 6.313.233c-.587 0-1.13.146-1.626.438A3.232 3.232 0 0 0 3.51 1.847a3.158 3.158 0 0 0-.43 1.62v1.237a1.629 1.629 0 0 0-.842.752c-.086.16-.148.335-.184.526A4.936 4.936 0 0 0 2 6.837V9.25c0 .378.018.663.055.854.036.192.098.367.184.527.155.291.38.517.677.677.155.086.328.148.52.184.196.037.48.055.854.055h4.04c.374 0 .656-.018.848-.055.196-.036.371-.098.526-.184.292-.155.517-.38.677-.677.086-.16.148-.335.184-.527.037-.19.055-.476.055-.854V6.837c0-.378-.018-.663-.055-.855a1.804 1.804 0 0 0-.184-.526 1.615 1.615 0 0 0-.841-.752V3.467Zm-5.168 0c0-.351.087-.675.26-.97a1.916 1.916 0 0 1 1.681-.972 1.916 1.916 0 0 1 1.675.97c.173.297.26.62.26.972V4.54H4.372V3.467Z"></path></svg></span>Your personal messages are <a data-testid="clickable-link" class="ajgl1lbb" role="button" rel="noreferrer noopener" target="_blank">end-to-end encrypted</a></div></div></div></div></div></div><div class="ldL67 _3sh5K"><div id="main" class="_3xTHG" data-testid="conversation-panel-wrapper"><div class="lhggkp7q qq0sjtgm tkdu00h0 ln8gz9je ppled2lx tbmiozwh fq1kqmrp shnvsdv4" data-asset-chat-background-dark="true" style="opacity: 0.4;"></div><header class="_23P3O" data-testid="conversation-header"><div class="_2YnE3" title="Profile Details" role="button"><div class="_3GlyB" style="height: 40px; width: 40px;"><img src="https://pps.whatsapp.net/v/t61.24694-24/147460017_329935912596568_8759729673134899229_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVyXmpSruON4cmyS_97BXosM6gwIJsehS90U_1_Dnv2otg&amp;oe=633525CD" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr" style="visibility: visible;"></div></div><div class="_24-Ff" role="button" data-testid="conversation-info-header"><div class="_2rlF7"><div class="_21nHd"><span dir="auto" title="Arpit Singhal" class="ggj6brxn gfz4du6o r7fjleex g0rxnol2 lhj4utae le5p0ye3 l7jjieqr i0jNr">Arpit Singhal</span></div></div></div><div class="_1yNrt"><div class="_1QVfy _3UaCz"><div class="_2cNrC" data-testid="search-button"><div aria-disabled="false" role="button" tabindex="0" class="_26lC3" data-tab="6" title="Search…" aria-label="Search…"><span data-testid="search-alt" data-icon="search-alt" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"></path></svg></span></div><span></span></div><div><div class="_2cNrC" data-testid="conversation-menu-button"><div aria-disabled="false" role="button" tabindex="0" class="_26lC3" data-tab="6" title="Menu" aria-label="Menu"><span data-testid="menu" data-icon="menu" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg></span></div><span></span></div></div></div></div></header><span class="_2Um41"></span><div class="_2Um41"><span></span></div><div class="_2gzeB"><div class="tm2tP copyable-area"><span></span><div class="_27Uai"><span><div role="button" tabindex="0" aria-label="Scroll to bottom" class="_1GLVO _165_h" data-tab="7" style="transform: scaleX(1) scaleY(1); opacity: 1;"><span class="_38VQ8"></span><span data-testid="down" data-icon="down" class="_3K42l"><svg viewBox="0 0 19 20" width="19" height="20" class=""><path fill="currentColor" d="m3.8 6.7 5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg></span></div></span></div><div class="_33LGR" data-testid="conversation-panel-messages" tabindex="0"><div class="_2AL2u"></div><div class="p357zi0d kk3akd72 ac2vgrno i5tg98hk f9ovudaz lzi2pvmc gx1rr48f"><div class="p357zi0d gndfcl4n ac2vgrno hj839x6e rd228egi tt8xd2xn k1jo73ug mpdn4nr2 isfiuinm t3rh7lfs ihvf49ua g9p5wyxn i0tg5vk9 aoogvgrq o2zu3hjb e6ckhcgy" title="load earlier messages…"><span data-testid="refresh" data-icon="refresh" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M17.6 6.4C16.2 4.9 14.2 4 12 4c-4.4 0-8 3.6-8 8s3.6 8 8 8c3.7 0 6.8-2.6 7.7-6h-2.1c-.8 2.3-3 4-5.6 4-3.3 0-6-2.7-6-6s2.7-6 6-6c1.7 0 3.1.7 4.2 1.8L13 11h7V4l-2.4 2.4z"></path></svg></span></div></div><div tabindex="-1" class="n5hs2j7m oq31bsqd gx1rr48f qh5tioqs ln8gz9je gvkkofon m3ct2rho k1jo73ug ec1z5skj isfiuinm" data-tab="8" role="region" aria-label="Message list. Press right arrow key on a message to open message context menu."><div class="_1-FMR _15WYQ focusable-list-item" tabindex="-1"><div class="_1-lf9 NQl4z"><span dir="auto" class="i0jNr">YESTERDAY</span></div></div><div tabindex="-1" class="_1-FMR _3Zpy8 message-in focusable-list-item" data-id="false_917404061338@c.us_3EB081A7B4BBC400A258"><span></span><div data-testid="msg-container" class="_1-lf9 _3mSPV _18q-J"><span data-testid="tail-in" data-icon="tail-in" class="_1kh65"><svg viewBox="0 0 8 13" width="8" height="13" class=""><path opacity=".13" fill="#0000000" d="M1.533 3.568 8 12.193V1H2.812C1.042 1 .474 2.156 1.533 3.568z"></path><path fill="currentColor" d="M1.533 2.568 8 11.193V0H2.812C1.042 0 .474 1.156 1.533 2.568z"></path></svg></span><div class="ItfyB _3nbHh"><span aria-label="Arpit Singhal:"></span><div class="_22Msk"><div class="copyable-text" data-pre-plain-text="[0:43 pm, 17/09/2022] Arpit Singhal: "><div class="_1Gy50"><span dir="ltr" class="i0jNr selectable-text copyable-text"><span>.navbar li a {
+        padding: 3px 3px;
+        text-decoration: none;
+        color: bisque;
+        /* border: 2px solid black; */
+        text-transform: uppercase;
+
+    }
+    
+    .navbar li a.login
+    {
+        /* border: 2px solid green; */
+        margin: 11px 4px;
+        padding: 5px 4px;
+        /* color: blue;
+        background: cyan; */
+        text-transform: uppercase;
+        transition-duration: 0.4s;
+        
+    }
+    .navbar li a.login:hover
+    {
+        background-color: hsl(60, 100%, 90%);
+        color: wheat;
+
+    }
+    .navbar li a.sign
+    {
+        /* border: 2px solid green; */
+        margin: 11px 4px;
+        padding: 5px 4px;
+        /* color: blue;
+        background: wheat; */
+        text-transform: uppercase;
+
+    }
+    …</span></span><span class="o0rubyzf le5p0ye3 ajgl1lbb" role="button" data-testid="caption-read-more-button"> Read more</span><span class="_20bHr"></span></div></div><div class="_1beEj"><div class="gq1t1y46 lak21jic e4p1bexh cr2cog7z le5p0ye3 _1WSmF" data-testid="msg-meta"><span class="l7jjieqr fewfhwl7" dir="auto">12:43 pm</span></div></div></div><span></span><div class="_39T_J"></div></div><div class="p357zi0d ktfrpxia nu7pwgvd fhf7t426 sap93d0t gndfcl4n _1m68F"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div></div></div></div></div></div><div tabindex="-1" class="_1-FMR _3Zpy8 j-md4 message-in focusable-list-item" data-id="false_917404061338@c.us_722C0D62052CB48F1ADCC6E750E870BC"><span></span><div data-testid="msg-container" class="_1-lf9 _1pC3e"><div class="ItfyB _3nbHh"><div class="cm280p3y kbtdaxqp ocd2b0bc folpon7g aa0kojfi snweb893 g0rxnol2 jnl3jror"><div><div role="button" data-testid="image-thumb" class="gndfcl4n l8fojup5 paxyh2gw sfeitywo cqsf3vkf ajgl1lbb p357zi0d ac2vgrno laorhtua gfz4du6o r7fjleex g0rxnol2" style="width: 240px; height: 320px;"><div class="g0rxnol2 ln8gz9je ppled2lx" data-testid="media-url-provider"><div class="lhggkp7q jnl3jror p357zi0d gndfcl4n ac2vgrno ln8gz9je ppled2lx"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgANQMBIgACEQEDEQH/xAAwAAABBQEAAAAAAAAAAAAAAAAAAQIDBAUGAQADAQEAAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAA22uz08hlORmn0PCdWK+KDRHORyrtWjGmX12D0lQg0pC41GdruS2ql0mzxGo53ykNc46IjrlglQGTpCE5XBQ2ArFAFojArFACf//EACQQAAICAQMFAQADAAAAAAAAAAECAAMRBBIhBRAxQVEiMkJx/9oACAEBAAE/ABH/AImW6rYzDy2YustA4eabqrowFnKxWWxAy+DCOwtud7QRwBDW1ljf7DpiI6MhnSGZtLD2WpBuOPMtB09j7B7j22GgOUE5szmaSsVaatR8h7CMtYd0ZRH1Fb4p2YGYaENipXyTEXYir8EY9sgTqVqixNpjn3mdJKHe39oTDNTriDtrMfUWP5Yy4kgGbz8lN9lLbkODKupXEjcJVrqrAc8Rm5gMP64hr+RK/ZngRWAEZgCJn3CeARM5/QgIIjOfETBHJmTnmcFYreoSUOfUNg8iNYCISFn/xAAaEQACAwEBAAAAAAAAAAAAAAAAEQECEDEg/9oACAECAQE/ACbeJKzjOjQ96InFn//EACARAAICAQMFAAAAAAAAAAAAAAABAhIDETFhECAhIlH/2gAIAQMBAT8AEn2Jckl0jhbJKj0KOWxSXwt5ZJKW56wQpaox7yNXV8EskizP/9k=" class="jciay5ix tvf2evcx oq44ahr5 lb5m6g5c fsmudgz7" style="width: 100%;"></div><div class="lhggkp7q jnl3jror p357zi0d gndfcl4n ac2vgrno ln8gz9je ppled2lx"><img src="blob:https://web.whatsapp.com/c96a2136-e19b-43f8-af8b-82416fba9f14" class="jciay5ix tvf2evcx oq44ahr5 lb5m6g5c" style="width: 100%;"></div></div><div class="lhggkp7q jxacihee tkdu00h0 b9fczbqn ln8gz9je he7yjufn e1lnay39"></div></div><div class="dpkuihx7 lhggkp7q j2mzdvlq b9fczbqn"><div class="pp8r7oc8 lak21jic e4p1bexh cr2cog7z le5p0ye3 _1WSmF" data-testid="msg-meta"><span class="l7jjieqr fewfhwl7" dir="auto">4:35 pm</span></div></div></div></div><span></span><div class="_39T_J"></div></div><div class="p357zi0d ktfrpxia nu7pwgvd fhf7t426 sap93d0t gndfcl4n _1m68F"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div role="button" tabindex="0" aria-label="Forward media" class="_1d5bX _165_h Ae3bU"><span data-testid="forward-chat" data-icon="forward-chat" class="r83rrh3w"><svg viewBox="0 0 25 25" width="25" height="25" class=""><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M14.248 6.973a.688.688 0 0 1 1.174-.488l5.131 5.136a.687.687 0 0 1 0 .973l-5.131 5.136a.688.688 0 0 1-1.174-.488v-2.319c-4.326 0-7.495 1.235-9.85 3.914-.209.237-.596.036-.511-.268 1.215-4.391 4.181-8.492 10.361-9.376v-2.22z"></path></svg></span></div></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div></div></div></div></div></div><div tabindex="-1" class="_1-FMR j-md4 message-in focusable-list-item" data-id="false_917404061338@c.us_4FB863884DCE759263083DD38E57E386"><span></span><div data-testid="msg-container" class="_1-lf9 _1pC3e"><div class="ItfyB _3nbHh"><span aria-label="Arpit Singhal:"></span><div class="cm280p3y kbtdaxqp ocd2b0bc folpon7g aa0kojfi snweb893 g0rxnol2 jnl3jror"><div><div role="button" data-testid="image-thumb" class="gndfcl4n l8fojup5 paxyh2gw sfeitywo cqsf3vkf ajgl1lbb p357zi0d ac2vgrno laorhtua gfz4du6o r7fjleex g0rxnol2" style="width: 240px; height: 320px;"><div class="g0rxnol2 ln8gz9je ppled2lx" data-testid="media-url-provider"><div class="lhggkp7q jnl3jror p357zi0d gndfcl4n ac2vgrno ln8gz9je ppled2lx"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgANgMBIgACEQEDEQH/xAAwAAADAQEBAQAAAAAAAAAAAAAABAUDAgEGAQADAQEAAAAAAAAAAAAAAAABAgMABP/aAAwDAQACEAMQAAAAueeiNKxYlY/S9Tq2GQgAve4+sqMhxXMrehPDenZJ6femfRDnFnik0VKkGN2xgm9XNxGk9c8OrRVkW5MOjI7AWnwZdewVpKgEdgK3/8QAIxAAAgICAgMAAgMAAAAAAAAAAQIAAxESBCETIjEFURAjQf/aAAgBAQABPwDMzOXznrfSte5V+UcMEtSbDAMC7CKPsx/HJr1sLgDuXVtshz3mVc2ixkqz3OlSW89Kzqg2h9fsBGMznWLr+5kursDjAnHGb02OBmcrmGysog9YoAENxbHU3GCsdLDe6keplqeNgFyYyvW42XEZ8oIo6E49Llmduv0JhlZsxwGjIFUHXM5CeSpwF+QjapCPo+iNYUAysvc1nIMT2GxmAO408yLVYGEW1kt6+Gf08lR7YInIXJIlTArgjsRiAI3yMAQ+PkWpy23WIQQZcuVzGVvqnBmbmbBYTxMR2ZeNVwP9ionnIXOIcBiGE5HPusfIbAnE5PmrO30Sx9dWAnkBXInMuOMShitg7l6+0//EAB4RAAIDAAIDAQAAAAAAAAAAAAABAhARIkESITJh/9oACAECAQE/ADa1CTZnLCeqoPqp+zIkX4y/HXc6l8mtQIriI//EAB4RAAEEAgMBAAAAAAAAAAAAAAEAAhAREiEiMUFh/9oACAEDAQE/AFWoookDtZcU2jDx7DNC1ZThk36I8bDe1QL048o//9k=" class="jciay5ix tvf2evcx oq44ahr5 lb5m6g5c fsmudgz7" style="width: 100%;"></div><div class="lhggkp7q jnl3jror p357zi0d gndfcl4n ac2vgrno ln8gz9je ppled2lx"><img src="blob:https://web.whatsapp.com/43b356b5-ba10-4d79-ab3d-542fa4da147a" class="jciay5ix tvf2evcx oq44ahr5 lb5m6g5c" style="width: 100%;"></div></div><div class="lhggkp7q jxacihee tkdu00h0 b9fczbqn ln8gz9je he7yjufn e1lnay39"></div></div><div class="dpkuihx7 lhggkp7q j2mzdvlq b9fczbqn"><div class="pp8r7oc8 lak21jic e4p1bexh cr2cog7z le5p0ye3 _1WSmF" data-testid="msg-meta"><span class="l7jjieqr fewfhwl7" dir="auto">4:49 pm</span></div></div></div></div><span></span><div class="_39T_J"></div></div><div class="p357zi0d ktfrpxia nu7pwgvd fhf7t426 sap93d0t gndfcl4n _1m68F"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div role="button" tabindex="0" aria-label="Forward media" class="_1d5bX _165_h Ae3bU"><span data-testid="forward-chat" data-icon="forward-chat" class="r83rrh3w"><svg viewBox="0 0 25 25" width="25" height="25" class=""><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M14.248 6.973a.688.688 0 0 1 1.174-.488l5.131 5.136a.687.687 0 0 1 0 .973l-5.131 5.136a.688.688 0 0 1-1.174-.488v-2.319c-4.326 0-7.495 1.235-9.85 3.914-.209.237-.596.036-.511-.268 1.215-4.391 4.181-8.492 10.361-9.376v-2.22z"></path></svg></span></div></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div></div></div></div></div></div><div tabindex="-1" class="_1-FMR j-md4 message-out focusable-list-item" data-id="true_917404061338@c.us_3E28B6B5FFD5A7077FFEAC376C8B454E"><span></span><div data-testid="msg-container" class="_1-lf9 _4OiJG _18q-J"><span data-testid="tail-out" data-icon="tail-out" class="_1kh65"><svg viewBox="0 0 8 13" width="8" height="13" class=""><path opacity=".13" d="M5.188 1H0v11.193l6.467-8.625C7.526 2.156 6.958 1 5.188 1z"></path><path fill="currentColor" d="M5.188 0H0v11.193l6.467-8.625C7.526 1.156 6.958 0 5.188 0z"></path></svg></span><div class="ItfyB _3nbHh"><span aria-label="You:"></span><div class="cm280p3y m3h9lho3 lna84pfr psacz3a6 przvwfww mmw11n2j"><div class="bx0vhl82 _1bT9q"><span data-testid="forwarded" data-icon="forwarded" class="s4k44ver l7jjieqr fewfhwl7"><svg width="16" height="16" viewBox="0 0 16 16" class=""><path d="M9.519 3.875a.54.54 0 0 1 .922-.382l4.03 4.034a.54.54 0 0 1 0 .764l-4.03 4.034a.54.54 0 0 1-.922-.383v-1.821c-3.398 0-5.886.97-7.736 3.074-.164.186-.468.028-.402-.211.954-3.449 3.284-6.67 8.138-7.363V3.875Z" fill="currentColor"></path></svg></span><span class="g0rxnol2 g3ewzqzm tt8xd2xn kjemk6od mpdn4nr2 k6y3xtnu dsh4tgtl h432zind dv18d5t9">Forwarded</span></div><button class="i5tg98hk f9ovudaz przvwfww gx1rr48f shdiholb phqmzxqs gtscxtjd ajgl1lbb thr4l2wc cc8mgx9x eta5aym1 d9802myq e4xiuwjv cm280p3y p357zi0d f8m0rgwh elxb2u3l ln8gz9je gfz4du6o r7fjleex tffp5ko5 l8fojup5 paxyh2gw" data-testid="document-thumb" title="Download “IMG-20220516-WA0012.jpg”" type="button"><div class="l8fojup5 paxyh2gw sfeitywo cqsf3vkf ajgl1lbb gfz4du6o r7fjleex aja0x350 ln8gz9je s0eflmyh"><div class="p357zi0d ktfrpxia nu7pwgvd fhf7t426 sap93d0t gndfcl4n jbxl65f1 lqdozo90 igb3k0ri bavixdlz nntdgyy8"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh o9i7y497" style="flex-shrink: 0;"><div class="sxl192xd hbhfgwk1 fs6hn1up ekdr8vow icon-doc-generic"></div></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh g0rxnol2 g3ewzqzm tt8xd2xn mpdn4nr2 spjzgwxb a3oefunm gfz4du6o r7fjleex lhj4utae le5p0ye3" style="flex-grow: 1;"><span dir="auto" class="i0jNr">IMG-20220516-WA0012.jpg</span></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh" style="flex-grow: 0; flex-shrink: 0;"></div></div></div></button><div class="e4p1bexh lak21jic ocd2b0bc jfqm35v0 aa0kojfi mhcwslh8 cr2cog7z sabn9a5k ekmn1tbb hys5s3z0 ktnphmnq hpb4froj tf9oak2v"><span data-meta-key="type" data-testid="type" class="l7jjieqr pt32pij7 gfz4du6o r7fjleex lhj4utae le5p0ye3 p8zrgzvm" title="JPG">JPG</span><span class="l7jjieqr pt32pij7 gfz4du6o r7fjleex lhj4utae le5p0ye3 p8zrgzvm tt8xd2xn mw4yctpw mpdn4nr2 qnz2jpws t3rh7lfs">•</span><span class="l7jjieqr pt32pij7 gfz4du6o r7fjleex lhj4utae le5p0ye3 p8zrgzvm" title="109 kB">109 kB</span><span class="l7jjieqr pt32pij7 gfz4du6o r7fjleex lhj4utae le5p0ye3 p8zrgzvm tt8xd2xn mw4yctpw mpdn4nr2 qnz2jpws t3rh7lfs">•</span></div><div class="_1a1gY"><div class="gq1t1y46 lak21jic e4p1bexh cr2cog7z le5p0ye3 _1WSmF" data-testid="msg-meta" role="button"><span class="l7jjieqr fewfhwl7" dir="auto">4:52 pm</span><div class="do8e0lj9 l7jjieqr k6y3xtnu"><span data-testid="msg-dblcheck" aria-label=" Delivered " data-icon="msg-dblcheck" class=""><svg viewBox="0 0 16 15" width="16" height="15" class=""><path fill="currentColor" d="m15.01 3.316-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg></span></div></div></div></div><span></span><div class="_39T_J"></div></div><div class="p357zi0d ktfrpxia nu7pwgvd kcgo1i74 sap93d0t gndfcl4n _1m68F"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div></div></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div role="button" tabindex="0" aria-label="Forward media" class="_1d5bX _165_h Ae3bU"><span data-testid="forward-chat" data-icon="forward-chat" class="r83rrh3w"><svg viewBox="0 0 25 25" width="25" height="25" class=""><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M14.248 6.973a.688.688 0 0 1 1.174-.488l5.131 5.136a.687.687 0 0 1 0 .973l-5.131 5.136a.688.688 0 0 1-1.174-.488v-2.319c-4.326 0-7.495 1.235-9.85 3.914-.209.237-.596.036-.511-.268 1.215-4.391 4.181-8.492 10.361-9.376v-2.22z"></path></svg></span></div></div></div></div></div><div tabindex="0" class="_1-FMR j-md4 message-in focusable-list-item" data-id="false_917404061338@c.us_3EB011E3D160D953E780"><span></span><div data-testid="msg-container" class="_1-lf9 _3y2LX _18q-J"><span data-testid="tail-in" data-icon="tail-in" class="_1kh65"><svg viewBox="0 0 8 13" width="8" height="13" class=""><path opacity=".13" fill="#0000000" d="M1.533 3.568 8 12.193V1H2.812C1.042 1 .474 2.156 1.533 3.568z"></path><path fill="currentColor" d="M1.533 2.568 8 11.193V0H2.812C1.042 0 .474 1.156 1.533 2.568z"></path></svg></span><div class="ItfyB _3nbHh"><span aria-label="Arpit Singhal:"></span><div class="_1FpDI" style="width: 336px;"><div data-testid="image-thumb-gif" class="_1HqS9" style="width: 330px; height: 247.5px;"><div role="button" class="gndfcl4n k17s6i4e p357zi0d ppled2lx ac2vgrno tkdu00h0 lhggkp7q qq0sjtgm ln8gz9je mb8var44" data-testid="media-state-gif-icon"><div class="gndfcl4n g8xmoczg g9p5wyxn i0tg5vk9 aoogvgrq o2zu3hjb k17s6i4e p357zi0d qmp0wt83 ac2vgrno g0rxnol2 b6qzmhfs"><span data-testid="media-gif" data-icon="media-gif" class=""><svg width="24" height="24" viewBox="0 0 24 24" class=""><path d="M17.9 9v2h3.5c.2 0 .5.1.6.2.3.2.4.6.3 1-.1.4-.4.6-.8.6H17.9V15.5c0 .8-.8 1.2-1.4.9-.3-.2-.5-.5-.5-.9V8.4c0-.7.4-1.1 1.1-1.1H22c.5 0 .9.3 1 .7.1.6-.3 1-.9 1h-4.2ZM7.7 12.8H6.3c-.2 0-.4-.1-.5-.1-.3-.2-.4-.5-.3-.9.1-.3.4-.6.7-.6h2.6c.4 0 .8.4.8.9v2.5c0 .5-.3.8-.7 1.1-1.1.6-2.2 1-3.5.9-1.8-.1-3.3-.9-4-2.7-1.2-2.6.1-5.9 3.3-6.6 1.4-.3 2.8-.1 4.1.7.4.2.5.6.4 1-.1.4-.3.6-.7.7-.3.1-.6 0-.8-.2-.5-.3-1-.5-1.5-.6-1.5-.2-2.9.9-3.1 2.4-.1.6 0 1.2.2 1.8.5 1.2 1.7 1.9 3 1.7.5-.1 1-.2 1.4-.5.1-.1.2-.2.2-.3-.2-.4-.2-.8-.2-1.2Zm5.9-1v3.6c0 .7-.5 1.1-1.2 1-.4-.1-.7-.4-.7-.8V8.3c0-.2 0-.4.1-.6.2-.4.6-.6 1.1-.5.4.1.7.5.7.9v3.7Z" fill="currentColor"></path></svg></span></div></div><div class="-tfJt" style="background-image: url(&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCABLAGQDASIAAhEBAxEB/8QAHAABAAICAwEAAAAAAAAAAAAAAAUIAgYBAwcE/8QAKhAAAQQCAQQCAQQDAQAAAAAAAQACAwQFEQYHEiFRMUEIExQiYRUkMnH/xAAbAQEAAgMBAQAAAAAAAAAAAAAABAUCAwcGAf/EACsRAAEEAQMCBQMFAAAAAAAAAAABAgMRBAUSIRNRBjFBcaEiMmGBkbHB4f/aAAwDAQACEQMRAD8Aqfoek0PSIr4rBoek0PSIgGh6TQ9IiAaHpND0iIBoek0PSIgGh6TQ9IiAaHpERAERF8AREQBERAEREAREQBERAEREAREQBYOmha7sdK0O9Fw2uvjuKu9R+UUeFYe5BQjtySutZC2JDBBXhifLM9wjBcQGRuPaNOd4ABB827wf4R9MKLanHOQvxWVzNquZWiHljasLm6J7gwY8uYD2PIBc4nsfrfa7VTn61iae7ZK76quvWu/NE/F03Iy27428XV+llS0W+dZejmN6O8oZRwObr28XkYnvjpxWH2BRnimkjlj/AF3RxCXyAe5sbB9fy13O0NTsTKjzYUniW2r/AFx/JHyMd+NIsUnmgREKkGgIurAU+W8zyDsbwbiGRzsrDotqQSTOI3ruDImOPbv7OlL8t4J1R6dR1LXUDp9l8JTvStihnt1Jog5xIGh3M0dEjfkaH0tSzxI7arkvsbei+t1cEaiAgjYOwUW01BERAEREBJ/jy9kPNJakrwyY4/MyBjtAnWJna7XvTmuB+/G/sFXr4dy2KTlmRmy7G/uLtWDGVP02HXdXu5jtJ+dEw1nbP2f/AHSopw3PUuF8rrcnlx0cofHNStSFj3hsE8ToZHOjZJGZCGPcBt7QCQdgAlWNxHWfphUkp8gbybCMnxrO4VXZ2SSO5MTa26ab9mRGf9+y4hri0uc0bAbtcm8d6dNkZKKyNXJtq0T34/ejovhPLiix1a56IqOvlfb/AE8z68ZexnH8YydwRixcx9i3MIxpokktzFwA86AIP2V5Wts6h8vwPJ7GLpcdqTtrYetLWNh7y5svfO+UNYXOcXBne4d/e4OBaQR5Y3U17/w9E6DTY2Obt+7heyuVU+Dx+tSNlznuYtpxz+iWERFdFUXW/GXF8Ph6c0sNiuKcegyNrGtuNsvhLZrNiSazG585a5rpmtkhd4+m6aNDS+vqFlKOT6Z5Ti8GH4/jbGZgz+JykeOx0UD7zasV8QzSEAnfdSDvB8En+l5z0Aky9vjvHa2GjmbdfVyEUU0fzDFEcm7v9AfrXK4G/k/G9HW15EyyuwnKcrXfRxE1rMGzYuar9hsROPmOTUjv5WbY/ix2uwk6b5XB9SyMmLU5Y+qtI5Vr23JX5tU8u51rBx4JMKN+xLVqfO1b+SjWFi/x+ZuY6LYr9u4x4+gwknX3uTW/kgD50p9ROKxVurYku5Kyyaw8FoMeiADrZ3ob32N+gAGj5OyZZd2j5bfc5O9KWgiIsjEIiIAuO1u+7Q37XKIAiIgCIiAlsLzHlXHoxVx1+tPSEhmZTyVYW4IXn/p8Ubz2Ncfslrvk613O39vIupfO+TfuxevY6s++wxW7OPx7KtixGRpzJHxkNkaR9OYf6IIBWuIq6TR8CWbrviRXd6JzNSy44+i2RdvYwiijgjZDE0NZG0Na0fQHgBZoisSCEREB/9k=&quot;);"></div><div class="_2ugLp"><video class="LHFBt" src="blob:https://web.whatsapp.com/0c15d081-fd41-44d8-a162-ea233e8a44c7" style="width: auto; height: 247.5px;">Your browser doesn’t support video playback.</video></div><div class="lhggkp7q jxacihee tkdu00h0 b9fczbqn ln8gz9je he7yjufn e1lnay39"></div><div class="Z3Htq"><span data-testid="giphy" data-icon="giphy" class=""><svg version="1.1" id="c212a434-5ccb-432f-a8c7-c12941522a3a" x="0" y="0" viewBox="0 0 42 12" width="42" height="12" class=""><path fill="#263238" fill-opacity=".2" d="M6.7 2a3.882 3.882 0 0 1 3.051 1.254L8.475 4.519A2.567 2.567 0 0 0 6.7 3.842a1.984 1.984 0 0 0-2.087 2.274 2.038 2.038 0 0 0 1.835 2.223c.084.008.168.01.252.008a2.706 2.706 0 0 0 1.5-.4v-1H6.233V5.229h3.8V8.68a3.623 3.623 0 0 1-3.34 1.52A3.864 3.864 0 0 1 2.45 6.116 3.982 3.982 0 0 1 6.7 2m32.331.222v.1l-3.084 4.571v3.1h-2.2v-3.1L30.8 2.311v-.089h2.474l1.609 2.663 1.675-2.663h2.473m-25.57 0v7.767h-2.187V2.222h2.187m5.348 0a2.8 2.8 0 0 1 3.118 2.829c0 1.587-1.043 2.819-3.118 2.841h-1.575v2.1h-2.2v-7.77h3.773m-1.573 3.817h1.576a.887.887 0 0 0 .921-.954.912.912 0 0 0-.921-.977h-1.576v1.931m12.84-3.806V10H27.9V7.06h-2.8V10h-2.2V2.233h2.2v2.951h2.8V2.233h2.174M6.7 1a4.964 4.964 0 0 0-5.25 5.116A4.843 4.843 0 0 0 6.689 11.2a5.24 5.24 0 0 0 3.585-1.211v1h7.96v-2.1h.576a4.3 4.3 0 0 0 3.1-1.188V11h4.2V8.06h.8V11h4.175V4.586l1.676 2.6v3.8h4.2V7.2l2.899-4.319.171-.253V1.222H36l-.294.467L34.9 2.98l-.772-1.28-.292-.483H29.8v.016h-2.9v2.951h-.8V1.233h-4.2v1.184a4.232 4.232 0 0 0-3.1-1.195h-8.526v1.145A4.835 4.835 0 0 0 6.7 1zm3.488 3.229.086-.085v.085h-.086z"></path><path fill="#FFF" fill-opacity=".5" d="M6.7 2a3.882 3.882 0 0 1 3.051 1.254L8.475 4.519A2.567 2.567 0 0 0 6.7 3.842a1.984 1.984 0 0 0-2.087 2.274 2.038 2.038 0 0 0 1.835 2.223c.084.008.168.01.252.008a2.706 2.706 0 0 0 1.5-.4v-1H6.233V5.229h3.8V8.68a3.623 3.623 0 0 1-3.34 1.52A3.864 3.864 0 0 1 2.45 6.116 3.982 3.982 0 0 1 6.7 2m32.331.222v.1l-3.084 4.571v3.1h-2.2v-3.1L30.8 2.311v-.089h2.474l1.609 2.663 1.675-2.663h2.473m-25.57 0v7.767h-2.187V2.222h2.187m5.348 0a2.8 2.8 0 0 1 3.118 2.829c0 1.587-1.043 2.819-3.118 2.841h-1.575v2.1h-2.2v-7.77h3.773m-1.573 3.817h1.576a.887.887 0 0 0 .921-.954.912.912 0 0 0-.921-.977h-1.576v1.931m12.84-3.806V10H27.9V7.06h-2.8V10h-2.2V2.233h2.2v2.951h2.8V2.233h2.174m-19.885 2 .086-.085v.081h-.087l.001.004z"></path></svg></span></div></div><div class="zE8pI"><div class="pp8r7oc8 lak21jic e4p1bexh cr2cog7z le5p0ye3 _1WSmF" data-testid="msg-meta"><span class="l7jjieqr fewfhwl7" dir="auto">4:58 pm</span></div></div></div><span><div class="_2copG _3snhK _3I4pa" style="opacity: 1;"><div data-testid="icon-down-context" data-js-context-icon="true" class="_3sryO" aria-label="Context Menu" role="button" style="transform: translateX(0%);"><span data-testid="down-context" data-icon="down-context" class=""><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="M3.3 4.6 9 10.3l5.7-5.7 1.6 1.6L9 13.4 1.7 6.2l1.6-1.6z"></path></svg></span></div></div></span><div class="_39T_J"></div></div><div class="p357zi0d ktfrpxia nu7pwgvd fhf7t426 sap93d0t gndfcl4n _1m68F"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div role="button" tabindex="0" aria-label="Forward media" class="_1d5bX _165_h Ae3bU"><span data-testid="forward-chat" data-icon="forward-chat" class="r83rrh3w"><svg viewBox="0 0 25 25" width="25" height="25" class=""><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M14.248 6.973a.688.688 0 0 1 1.174-.488l5.131 5.136a.687.687 0 0 1 0 .973l-5.131 5.136a.688.688 0 0 1-1.174-.488v-2.319c-4.326 0-7.495 1.235-9.85 3.914-.209.237-.596.036-.511-.268 1.215-4.391 4.181-8.492 10.361-9.376v-2.22z"></path></svg></span></div></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div><div role="button" tabindex="0" data-testid="reaction-entry-point" aria-label="React to message" class="_165_h Ae3bU"><span data-testid="react" data-icon="react" class="_15Dvn"><svg width="15" viewBox="0 0 15 15" fill="none" preserveAspectRatio="xMidYMid meet" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5C0 11.63 3.37 15 7.5 15A7.5 7.5 0 0 0 15 7.5C15 3.37 11.63 0 7.5 0S0 3.37 0 7.5Zm10.995 1.193.326-.04c.289-.023.487.266.357.487-.82 1.497-2.387 2.653-4.173 2.653-1.787 0-3.353-1.133-4.174-2.63-.145-.244.045-.533.334-.51.126.014.27.032.43.052.848.103 2.126.26 3.387.26 1.337 0 2.656-.165 3.513-.272Zm-5.58-1.32c.643 0 1.194-.644 1.194-1.343 0-.727-.551-1.343-1.195-1.343s-1.195.644-1.195 1.343c-.01.726.551 1.342 1.195 1.342Zm5.366-1.317c0 .685-.541 1.316-1.172 1.316-.63 0-1.171-.604-1.171-1.316 0-.685.54-1.316 1.171-1.316s1.172.604 1.172 1.316Z" fill="currentColor"></path></svg></span></div></div></div></div></div></div><div tabindex="-1" class="_1-FMR _3Zpy8 message-out focusable-list-item" data-id="true_917404061338@c.us_3EB0DA06DBA444ED7A9E"><span></span><div data-testid="msg-container" class="_1-lf9 _18q-J"><span data-testid="tail-out" data-icon="tail-out" class="_1kh65"><svg viewBox="0 0 8 13" width="8" height="13" class=""><path opacity=".13" d="M5.188 1H0v11.193l6.467-8.625C7.526 2.156 6.958 1 5.188 1z"></path><path fill="currentColor" d="M5.188 0H0v11.193l6.467-8.625C7.526 1.156 6.958 0 5.188 0z"></path></svg></span><div class="ItfyB _3nbHh"><span aria-label="You:"></span><div class="_22Msk"><div class="p357zi0d ktfrpxia nu7pwgvd fhf7t426 sap93d0t r15c9g6i"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l mhp1pqu9 nu7pwgvd gjuq5ydh l7jjieqr a6r0u4sv bx0vhl82 ntr8esoy"><span data-testid="recalled" data-icon="recalled" class=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M7.759 6.43a7 7 0 0 1 9.81 9.81l-9.81-9.81ZM6.357 7.858a7 7 0 0 0 9.786 9.786L6.357 7.857ZM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z" fill="currentColor"></path></svg></span></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh kiiy14zj j4enbv94"><div class="_1Gy50 _3TjU1">You deleted this message<span class="_20bHr"></span></div></div></div><div class="_1beEj"><div class="gq1t1y46 lak21jic e4p1bexh cr2cog7z le5p0ye3 _1WSmF" data-testid="msg-meta"><span class="l7jjieqr fewfhwl7" dir="auto">5:17 pm</span></div></div></div><span></span><div class="_39T_J"></div></div><div class="p357zi0d ktfrpxia nu7pwgvd kcgo1i74 sap93d0t gndfcl4n _1m68F"></div></div></div><div tabindex="-1" class="_1-FMR j-md4 message-out focusable-list-item" data-id="true_917404061338@c.us_3EB0F7F5FB431A9D612E"><span></span><div data-testid="msg-container" class="_1-lf9 _3mSPV"><div class="ItfyB _3nbHh"><span aria-label="You:"></span><div class="_22Msk"><div class="copyable-text" data-pre-plain-text="[5:17 pm, 17/09/2022] Saket Ahlawat: "><div class="GAiYx"><div class="CHSLU gndfcl4n l8fojup5 paxyh2gw sfeitywo cqsf3vkf k2bacm8l ajgl1lbb p357zi0d sap93d0t ovllcyds kvdvyush gfz4du6o r7fjleex s0eflmyh"><div class="k5z04t9s cm280p3y p357zi0d ggj6brxn m0h2a7mj lb5m6g5c f8m0rgwh ac2vgrno idwf4z32 f8xtxj1z gfz4du6o r7fjleex n1yiu2zv itegkywt eb4rp10x rppts313"><div class="aoi073rw suguakab lpfcdsx3 c32ccnay tvf2evcx m0h2a7mj lb5m6g5c j4enbv94 gfz4du6o r7fjleex lhj4utae ljrqcn24" title="media3.giphy.com"><span dir="ltr" class="i0jNr">media3.giphy.com</span></div><div data-testid="link-description" class="ph7hol3q tvf2evcx ttu8nud2 lb5m6g5c dsh4tgtl gfz4du6o r7fjleex lhj4utae"><span dir="ltr" title="https://media3.giphy.com/media/DGWAx8d3IkICs/200.webp?cid=ecf05e47tp5t8t9ng9elhd7wklc8xygwi6sd9046r52elubb&amp;rid=200.webp&amp;ct=g" class="i0jNr">https://media3.giphy.com/media/DGWAx8d3IkICs/200.webp?cid=ecf05e47tp5t8t9ng9elhd7wklc8xygwi6sd9046r52elubb&amp;rid=200.webp&amp;ct=g</span></div><div data-testid="url-element" class="j8h4s3v0 tvf2evcx oq44ahr5 lb5m6g5c dsh4tgtl qbqilfqo"><span dir="ltr" class="i0jNr">media3.giphy.com</span></div></div></div></div><div class="_1Gy50"><span dir="ltr" class="i0jNr selectable-text copyable-text"><span>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;style&gt;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #293649f5;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  ba…</span></span><span class="o0rubyzf le5p0ye3 ajgl1lbb" role="button" data-testid="caption-read-more-button"> Read more</span><span class="_20bHr _2ui2p"></span></div></div><div class="_1beEj"><div class="gq1t1y46 lak21jic e4p1bexh cr2cog7z le5p0ye3 _1WSmF" data-testid="msg-meta" role="button"><span class="l7jjieqr fewfhwl7" dir="auto">5:17 pm</span><div class="do8e0lj9 l7jjieqr k6y3xtnu"><span data-testid="msg-dblcheck" aria-label=" Delivered " data-icon="msg-dblcheck" class=""><svg viewBox="0 0 16 15" width="16" height="15" class=""><path fill="currentColor" d="m15.01 3.316-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg></span></div></div></div></div><span></span><div class="_39T_J"></div></div><div class="p357zi0d ktfrpxia nu7pwgvd kcgo1i74 sap93d0t gndfcl4n _1m68F"><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div></div></div><div class="tvf2evcx m0h2a7mj lb5m6g5c j7l1k36l ktfrpxia nu7pwgvd gjuq5ydh rqm6ogl5 i5tg98hk folpon7g przvwfww snweb893"><div role="button" tabindex="0" aria-label="Forward media" class="_1d5bX _165_h Ae3bU"><span data-testid="forward-chat" data-icon="forward-chat" class="r83rrh3w"><svg viewBox="0 0 25 25" width="25" height="25" class=""><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M14.248 6.973a.688.688 0 0 1 1.174-.488l5.131 5.136a.687.687 0 0 1 0 .973l-5.131 5.136a.688.688 0 0 1-1.174-.488v-2.319c-4.326 0-7.495 1.235-9.85 3.914-.209.237-.596.036-.511-.268 1.215-4.391 4.181-8.492 10.361-9.376v-2.22z"></path></svg></span></div></div></div></div></div></div></div></div></div><div class="tvf2evcx oq44ahr5 lb5m6g5c e3u7tipa" style="height: 0px;"></div><footer class="_2cYbV"><div class="_2BU3P tm2tP copyable-area"><div data-testid="compose-box" class="_1SEwr"><span></span><span><div class="_6h3Ps"><div class="_3HQNh _1un-p"><div data-state="closed" class="g0rxnol2 p357zi0d d1pdhp1p bugiwsl0 rj4tx0cq cx8fzybs fyy3ld6e"><button tabindex="-1" class="lhggkp7q mvj9yovn f804f6gw fyy3ld6e svlsagor dntxsmpk ixn6u0rb s2vc4xk1 o0wkt7aw t1844p82 esbo3we0 qizq0yyl axi1ht8l eg0stril" aria-label="Close panel"><div class="b9l0eqez ojci89ib inogquss akljc1zx"><span data-testid="x" data-icon="x" class=""><svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24" class=""><path d="m19.1 17.2-5.3-5.3 5.3-5.3-1.8-1.8-5.3 5.4-5.3-5.3-1.8 1.7 5.3 5.3-5.3 5.3L6.7 19l5.3-5.3 5.3 5.3 1.8-1.8z"></path></svg></span></div></button><button tabindex="-1" class="lhggkp7q mvj9yovn f804f6gw fyy3ld6e svlsagor dntxsmpk ixn6u0rb s2vc4xk1 o0wkt7aw t1844p82 esbo3we0 qizq0yyl b9fczbqn oybnjv0e" aria-label="Open emojis panel" data-tab="10" data-testid="compose-btn-emoji" style="transform: translateX(0px);"><div class=""><span data-testid="smiley" data-icon="smiley" class=""><svg viewBox="0 0 24 24" width="24" height="24" class="ekdr8vow dhq51u3o"><path fill="currentColor" d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"></path></svg></span></div></button><button tabindex="-1" class="lhggkp7q mvj9yovn f804f6gw fyy3ld6e svlsagor dntxsmpk ixn6u0rb s2vc4xk1 o0wkt7aw t1844p82 esbo3we0 qizq0yyl axi1ht8l oybnjv0e" aria-label="Open gif panel" style="transform: translateX(0px);"><div class=""><span data-testid="gif" data-icon="gif" class=""><svg viewBox="0 0 24 24" width="24" height="24" class="ekdr8vow dhq51u3o"><path fill="currentColor" d="m13.177 12.013-.001-.125v-1.053c0-.464 0-.827-.002-1.178a.723.723 0 0 0-.557-.7.715.715 0 0 0-.826.4c-.05.115-.072.253-.073.403-.003 1.065-.003 1.917-.002 3.834v.653c0 .074.003.136.009.195a.72.72 0 0 0 .57.619c.477.091.878-.242.881-.734.002-.454.003-.817.002-1.633l-.001-.681zm-3.21-.536a35.751 35.751 0 0 0-1.651-.003c-.263.005-.498.215-.565.48a.622.622 0 0 0 .276.7.833.833 0 0 0 .372.104c.179.007.32.008.649.005l.137-.001v.102c-.001.28-.001.396.003.546.001.044-.006.055-.047.081-.242.15-.518.235-.857.275-.767.091-1.466-.311-1.745-1.006a2.083 2.083 0 0 1-.117-1.08 1.64 1.64 0 0 1 1.847-1.41c.319.044.616.169.917.376.196.135.401.184.615.131a.692.692 0 0 0 .541-.562c.063-.315-.057-.579-.331-.766-.789-.542-1.701-.694-2.684-.482-2.009.433-2.978 2.537-2.173 4.378.483 1.105 1.389 1.685 2.658 1.771.803.054 1.561-.143 2.279-.579.318-.193.498-.461.508-.803.014-.52.015-1.046.001-1.578-.009-.362-.29-.669-.633-.679zM18 4.25H6A4.75 4.75 0 0 0 1.25 9v6A4.75 4.75 0 0 0 6 19.75h12A4.75 4.75 0 0 0 22.75 15V9A4.75 4.75 0 0 0 18 4.25zM21.25 15A3.25 3.25 0 0 1 18 18.25H6A3.25 3.25 0 0 1 2.75 15V9A3.25 3.25 0 0 1 6 5.75h12A3.25 3.25 0 0 1 21.25 9v6zm-2.869-6.018H15.3c-.544 0-.837.294-.837.839V14.309c0 .293.124.525.368.669.496.292 1.076-.059 1.086-.651.005-.285.006-.532.004-1.013v-.045l-.001-.46v-.052h1.096l1.053-.001a.667.667 0 0 0 .655-.478c.09-.298-.012-.607-.271-.757a.985.985 0 0 0-.468-.122 82.064 82.064 0 0 0-1.436-.006h-.05l-.523.001h-.047v-1.051h1.267l1.22-.001c.458-.001.768-.353.702-.799-.053-.338-.35-.56-.737-.561z"></path></svg></span></div></button><button tabindex="-1" class="lhggkp7q mvj9yovn f804f6gw fyy3ld6e svlsagor dntxsmpk ixn6u0rb s2vc4xk1 o0wkt7aw t1844p82 esbo3we0 qizq0yyl axi1ht8l oybnjv0e" aria-label="Open sticker panel" data-testid="compose-btn-sticker" style="transform: translateX(0px);"><div class=""><span data-testid="sticker" data-icon="sticker" class=""><svg viewBox="0 0 24 24" width="24" height="24" class="ekdr8vow dhq51u3o"><path fill="currentColor" d="M21.799 10.183c-.002-.184-.003-.373-.008-.548-.02-.768-.065-1.348-.173-1.939a6.6 6.6 0 0 0-.624-1.87 6.24 6.24 0 0 0-1.171-1.594 6.301 6.301 0 0 0-1.614-1.159 6.722 6.722 0 0 0-1.887-.615c-.59-.106-1.174-.15-1.961-.171-.318-.008-3.607-.012-4.631 0-.798.02-1.383.064-1.975.17a6.783 6.783 0 0 0-1.888.616 6.326 6.326 0 0 0-2.785 2.753 6.658 6.658 0 0 0-.623 1.868c-.107.591-.152 1.186-.173 1.941-.008.277-.016 2.882-.016 2.882 0 .52.008 1.647.016 1.925.02.755.066 1.349.172 1.938.126.687.33 1.3.624 1.871.303.59.698 1.126 1.173 1.595a6.318 6.318 0 0 0 1.614 1.159 6.786 6.786 0 0 0 2.146.656c.479.068.833.087 1.633.108.035.001 2.118-.024 2.578-.035a6.873 6.873 0 0 0 4.487-1.811 210.877 210.877 0 0 0 2.928-2.737 6.857 6.857 0 0 0 2.097-4.528l.066-1.052.001-.668c.001-.023-.005-.738-.006-.755zm-3.195 5.92c-.79.757-1.784 1.684-2.906 2.716a5.356 5.356 0 0 1-2.044 1.154c.051-.143.116-.276.145-.433.042-.234.06-.461.067-.74.003-.105.009-.789.009-.789.013-.483.042-.865.107-1.22.069-.379.179-.709.336-1.016.16-.311.369-.595.621-.844.254-.252.542-.458.859-.617.314-.158.65-.268 1.037-.337a8.127 8.127 0 0 1 1.253-.106s.383.001.701-.003a4.91 4.91 0 0 0 .755-.066c.186-.034.348-.105.515-.169a5.35 5.35 0 0 1-1.455 2.47zm1.663-4.757a1.128 1.128 0 0 1-.615.859 1.304 1.304 0 0 1-.371.119 3.502 3.502 0 0 1-.52.043c-.309.004-.687.004-.687.004-.613.016-1.053.049-1.502.129a5.21 5.21 0 0 0-1.447.473 4.86 4.86 0 0 0-2.141 2.115 5.088 5.088 0 0 0-.479 1.434 9.376 9.376 0 0 0-.131 1.461s-.006.684-.008.777c-.006.208-.018.37-.043.511a1.154 1.154 0 0 1-.626.86c-.072.036-.168.063-.37.098-.027.005-.25.027-.448.031-.021 0-1.157.01-1.192.009-.742-.019-1.263-.046-1.668-.126a5.27 5.27 0 0 1-1.477-.479 4.823 4.823 0 0 1-2.127-2.1 5.141 5.141 0 0 1-.482-1.453c-.09-.495-.13-1.025-.149-1.71a36.545 36.545 0 0 1-.012-.847c-.003-.292.005-3.614.012-3.879.02-.685.061-1.214.151-1.712a5.12 5.12 0 0 1 .481-1.45c.231-.449.53-.856.892-1.213.363-.36.777-.657 1.233-.886a5.26 5.26 0 0 1 1.477-.479c.503-.09 1.022-.129 1.74-.149a342.03 342.03 0 0 1 4.561 0c.717.019 1.236.058 1.737.148a5.263 5.263 0 0 1 1.476.478 4.835 4.835 0 0 1 2.126 2.098c.228.441.385.913.482 1.453.091.499.131 1.013.15 1.712.008.271.014 1.098.014 1.235a2.935 2.935 0 0 1-.037.436z"></path></svg></span></div></button></div><div class="_2jitM"><div class="_2cNrC" data-testid="conversation-clip"><div aria-disabled="false" role="button" tabindex="0" class="_26lC3" data-tab="10" title="Attach" aria-label="Attach"><span data-testid="clip" data-icon="clip" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"></path></svg></span></div><span></span></div></div></div><div class="_2lMWa"><div tabindex="-1" class="p3_M1"><div class="g0rxnol2"><div class="fd365im1 to2l77zo bbv8nyr4 mwp4sxku gfz4du6o ag5g9lrv" contenteditable="true" role="textbox" spellcheck="true" title="Type a message" data-testid="conversation-compose-box-input" data-tab="10" data-lexical-editor="true" style="user-select: text; white-space: pre-wrap; word-break: break-word;"><p class="selectable-text copyable-text"><br></p></div><div class="lhggkp7q qq0sjtgm jxacihee qzp46edm b9fczbqn bze30y65 jgi8eev7 t35qvd06 m62443ks rkxvyd19 c5h0bzs2">Type a message</div></div></div><div class="_3HQNh _1Ae7k"><button data-testid="ptt-ready-btn" class="_30ggS" aria-label="Voice message" data-tab="11"><span data-testid="ptt" data-icon="ptt" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"></path></svg></span></button></div></div></div></span></div></div><div class="lhggkp7q qq0sjtgm tkdu00h0 ln8gz9je"><div class="lhggkp7q jxacihee tkdu00h0 cm280p3y ln8gz9je"><div class="_3Bc7H"></div><div class="_3Bc7H"></div><div class="_3Bc7H"></div><div class="_3Bc7H"></div><div class="_3Bc7H"></div><div class="_3Bc7H"></div></div></div><div class="lhggkp7q qq0sjtgm tkdu00h0 ln8gz9je"></div><div class="lhggkp7q qq0sjtgm tkdu00h0 ln8gz9je"></div></footer><span></span></div></div><div class="ldL67 _1bLj8" data-testid="drawer-right"><span class="lhggkp7q qq0sjtgm ebjesfe0 jxacihee tkdu00h0"></span></div></div></div></div><div id="hard_expire_time" data-time="1678829157.621"></div><link rel="preload" crossorigin="anonymous" as="fetch" href="https://web.whatsapp.com/binary-transparency-manifest-2.2234.13.json" id="binary-transparency-manifest-preload"><scripts src="/moment_locales/en-GB.b256257e8d6fecb450ac.js"><script src="https://web.whatsapp.com/libsignal-protocol-ee5b8ba.min.js"></script><script defer="defer" src="https://web.whatsapp.com/runtime.a9d98bbf3302eb62dd35.js"></script><script data-binary-transparency-hash-key="inline-js-505c181cfacc422520a4b7b46e36a3c745a12dc932b0d7c2933aaed018e77c42">/*! Copyright (c) 2022 WhatsApp Inc. All Rights Reserved. */
+(self.webpackChunkwhatsapp_web_client=self.webpackChunkwhatsapp_web_client||[]).push([[5617],{595318:e=>{e.exports=function(e){return e&&e.__esModule?e:{default:e}},e.exports.default=e.exports,e.exports.__esModule=!0},145095:(e,t)=>{"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"?";if(null==e)throw new Error("Unexpected null or undefined: "+t);return e}},520289:(e,t)=>{"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.UPLOAD_TO_CLB=t.TICKET_URL=t.LOG_SIZE=t.CLB_URL=t.CLB_TOKEN=t.CLB_CHECK_URL=void 0,t.CLB_CHECK_URL="https://crashlogs.whatsapp.net/wa_fls_upload_check",t.CLB_TOKEN="1063127757113399|745146ffa34413f9dbb5469f5370b7af",t.CLB_URL="https://crashlogs.whatsapp.net/wa_clb_data",t.TICKET_URL="https://web.whatsapp.com/web-contact-us";let n=0;n=1,t.UPLOAD_TO_CLB=1,t.LOG_SIZE=4999},257977:(e,t)=>{"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.getDistribution=function(){let e="unknown";return e="prod","web_prod"},t.getLogUserAgent=function(e){let t,{appVersion:n,browser:r,device:o}=e;return t="Web/"+r,`WhatsApp/${n} ${t} Device/${o}`}},646722:(e,t,n)=>{"use strict";var r=n(595318),o=r(n(145095)),a=n(520289),s=n(257977),c=r(n(904285)),l=n(104617);function i(e){!function(e,t){const n=window.navigator.userAgent;if(n===p&&e.includes("getElementsByTagName"))return;const r=new FormData,i=new Blob([e],{type:"text/plain"});r.append("from_jid",function(){if(f)return f;try{f=JSON.parse((0,o.default)(c.default,"localStorage").getItem(d)),f&&(f=f.replace("-",""))}catch(e){}if(!f){f="unknown"+Math.floor(1e10*Math.random());const e=f;try{(0,o.default)(c.default,"localStorage").setItem(d,JSON.stringify(e))}catch(e){}}return(0,o.default)(f,"id")}()),r.append("agent",(0,s.getLogUserAgent)((0,l.parseUASimple)(n,"2.2234.13"))),r.append("file",i,"logs.txt"),r.append("tags","load");const u=new XMLHttpRequest,_=a.CLB_URL+"?access_token="+encodeURIComponent(a.CLB_TOKEN);u.open("POST",_,!0),u.send(r)}(e)}function u(e){let{error:t,reason:n,stack:r}=e;const o=(new Date).toISOString();return`${o}: error: ${t}\n${o}: reason for logs: ${n}\n${o}: userAgent: ${window.navigator.userAgent}\n${r}`}null==window.onerror&&(window.onerror=function(e,t,n){const r=t.split("?")[0];return"Uncaught SyntaxError: Unexpected token '<'"===e?(function(e){i(u({error:"failed to load a js or css bundle",reason:`failed to load [${e.split("/")[3].replace(/^\//,"")}]`,stack:""}))}(r),!0):(i(u({error:e,reason:`Error at [${r}:${n}]`,stack:""})),!1)});const d="WAUnknownID",p="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";let f},104617:(e,t)=>{"use strict";function n(e){return e.includes("windows")?"Windows":e.includes("mac")?"Mac OS":e.includes("linux")?"Linux":"Unparsed"}Object.defineProperty(t,"__esModule",{value:!0}),t.parseUASimple=function(e,t){const r=e.toLowerCase();return{browser:s(r),device:n(r),appVersion:t}};const r=/(chrome|firefox)\/([\w\.]+)/i,o=/(edge|opr)\/([\w\.]+)/i,a={chrome:"Chrome",edge:"Edge",opr:"Opera",firefox:"Firefox"};function s(e){const t=e.match(o)||e.match(r);return null==t?"Unparsed":`${a[t[1]]} ${t[2]}`}},904285:(e,t)=>{"use strict";let n;Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;try{n=window.localStorage}catch(e){}var r=n;t.default=r}},e=>{"use strict";e(e.s=646722)}])</script><script defer="defer" src="https://web.whatsapp.com/vendor1~bootstrap_qr.209e2422be3255e9cea6.js"></script><script defer="defer" src="https://web.whatsapp.com/bootstrap_qr.c8a228a8ac9e7fc0fc33.js"></script></scripts><script data-binary-transparency-hash-key="inline-js-9c8cd3d0f4d5af8c7f5cd1c45208edd308bfe472e353a50e4cbacbf6cb58627c">(i => {const l = document.getElementById(i); l &&fetch(l.href).then(b => b.text()).then(code => {const script = document.createElement('script');script.id = 'binary-transparency-manifest';script.type = 'application/json';script.innerHTML = code;document.body.append(script);});})('binary-transparency-manifest-preload');</script><script id="binary-transparency-manifest" type="application/json">{
+  "version": "2.2234.13",
+  "hash_function": "SHA256",
+  "root": "0xbe96de91befc50dcbe6a87335909c17e9c2a1496010e9d69bd4c542d495493c7",
+  "leaves": [
+    "0x00beeffa6af9bec31ca31ee52ff9749e12f439a0c1fc2168e0ee5e8ebe8eaca3",
+    "0x01ffb8bcc8896cdde4ed603cb561521dbaaa4a44493e57c8a9b40607b59146c2",
+    "0x02d50165b9ff4e0193ffdfbb20b38d0e328cd6bba0cd79d93065c7bb10c11cf8",
+    "0x041f0886338348bc18bd15bdea0cc4147b91f40980074c70863f71e164bfa75f",
+    "0x04aa37ef95a1e296395bc409312f638a969af8f1df315583320989107172a0e6",
+    "0x04b7f2d9ead9de7109653c113d7ad98f51e6efb8abead81c110c02dd8e261d70",
+    "0x067596edefa819f53a771d6f798f9270250f67d7da4f74398ae4ed81e66d5754",
+    "0x0873826c294fb3a9c943f0101e9aa53bb8e66b542f9c726868d8af31d2ae4407",
+    "0x0b21adcd2c2d190ecb87ea546a9321fc7aacc36f9b9a8a9d15a65028ffc07428",
+    "0x0bd4a164d633663750ece14aeddd1988b4e3fd6b11bc8297aa27e44417929845",
+    "0x0bf812d5e4511407d913d137afc6027f7295e1d81c238ec455221dcd43c58250",
+    "0x0c4a7a10a8d288b78f0dd0dea85e16e029bd503d5324a7b5d6089becd914a286",
+    "0x0e9ff3b8eaae7ed3f77456f80707df24e51706ee46cd0c7ec78c201ffab9f62f",
+    "0x0ef30220a688007bd5266a8aaedadf0448e42f00c7b28802fcc6eaf6135c669d",
+    "0x0f79caff3d54f0dd8fe91174fd3b5becf96e9e7e0e5f24be332f65c4fc1dd3d1",
+    "0x0fee9cebc1d75002fa71809f9bea92746fa9cd5a4ca05c18fb7fc5abe52d3bbf",
+    "0x10c3c4b57cc6d33fcc47d749c917a12436610ff962c1dcb890dccc59acbe51d4",
+    "0x11911ea81d089ee3bbbaa1043de182de0dfab8b12a7698ac3f33301ef9c29cf6",
+    "0x11c54b2f05d4679cf883178bd74d7db07a80fbfea9cbfe3a989f6c357c9f4190",
+    "0x121ebff226ecdc426f86cae1ad917c4e08306f95f2977a0c54e6d4e973f985f8",
+    "0x12aff8bf964047d2eaaa784c124cd9f3f4de9e341a953835f5a538fcea0573e9",
+    "0x14f82080aa21a9bd185e055e1765f3122bcf9cd23dd2e44272a56b3fc21905a2",
+    "0x153e10191162e66b01c80f385e207e7214cc52286b991bcdb3b03d870af02b3d",
+    "0x15d3f054217f507d9b59feb6b8a45e266345fca9f7a50fca3d4999211d6452ec",
+    "0x17436e4634ec9b1bf4ebb71bcf024ac1221d902f48e3e8225b91cfa2b78f4a2c",
+    "0x17a1aa9c12dc9629d557e14f71804b03c7694e766e771eab9c43da06c794de9a",
+    "0x18036b41d0210d7e9846692656a1dc74ad94a922a111f878c02275a7a0e02d04",
+    "0x1a378624d5611c59524950e725387dbbf68511849fb026251c22916663f71050",
+    "0x1b35c9697ced3c546caad3d0079c7893e7429aab7f376f65f7d2ad9ea16513b8",
+    "0x1c9e8448cb4648e788ca3702c8423a08ed8a85bf10c87ae9e2f9f055e74d0a08",
+    "0x1cc71a48069b464fb5fca1ef47b82d95c9d9603df08fdd334129e8381f571cfb",
+    "0x201b89d1ae02e5dfe11086617ca977a9ecc2c48cb19e9365e5985ba545003489",
+    "0x236d4a05b4613ff909e1c9de456ec2d14f9a1e7e6de66d32d6dc5eaf43c24991",
+    "0x23e9c958bf01a02af892973d685c035d43650b43b28be00682dee94487c162dd",
+    "0x24cec11f846c94d988a0a53675e1dfb0d9f11b81ff81f28e717ba489824a8c83",
+    "0x267b5a234414b179cae9faff22a9db48c37404d8b7d10b54867348ceb8feae43",
+    "0x26cd87f7bb52d491f94ec573d5da41954fb6467ab1d7f2b6d0dc7eab6b0d2fef",
+    "0x29ef0c8725beba3ec31d26ec7206b61f5b6d31394003800bf80968a79e5b8886",
+    "0x2a4992d5d375612d3c2827d4bbc78198c22d2bee8dd15b58934c6ae3fc5ebea3",
+    "0x2b038cf3778469d6a78d627557473a51c223fdb3c2e0ee56214a640d7da6673b",
+    "0x2da6c82aed00745a24155757c81e77156fdfbbd546ffd2530cb9d61945f32a9e",
+    "0x2dcb3b4d1894a11b5657a56906e793840e70e3865c065d5eb02e1eac8a76c508",
+    "0x2df60b5bcd70c3d5330ba0d026315ff40c052cd5536ec453788c2f3af346385e",
+    "0x2f98472658f6e9d8e3da1294bec5ba5d458dd3749b24002f51c1adced4c75cca",
+    "0x311c5bf55d592351e308a3039c18497d1439ee95bfdfc4f15928248bb61a4e8f",
+    "0x320fbc67311eda65eb07da192787418bff68b03294fa53e6d780e27c7b32e756",
+    "0x322f597452b896778c78453e4e5bbaded000bda2ad816684c61882a05316121a",
+    "0x334c633bb85866aabfeb5dc87b18d13b5d7d8b5e924020d230ad53f736a15aa1",
+    "0x37b50687b148a4058766e94df4e424f672f0568659e41d09904a59d64695674c",
+    "0x37f1c0c23e57bad2f16b29b8ef2699764907669d5f5d5b4adca5997433263216",
+    "0x384f9510d0ff23c82e20306e04d7efb6098f9e90d28331b476f390df709c76d4",
+    "0x38b45d6d82e0e66cf5e08e498c3e72d4d777994b81cea37b6c2effcb44fc7ebf",
+    "0x39e8ebf96b24c264fcb03d6fe6cdcab4f3c6b4d4b06208f4eb9f08705485f1b7",
+    "0x3a09f6cb7e7f8c7e4e9877bad3cae9f09ae1eb84e1695901c1f4dd59d8dab389",
+    "0x3abf80854f80aabf933221d55ab37df04971660bc980d4869ae1c7cb192408ab",
+    "0x3b56c84c05de4a18eaf562d7803552b53c88b7c10ca29036b3e9d0d1f433231a",
+    "0x3beed635b9e577f10cd35b0edf35a197ba16495db67e55f39ec435e7162a9e03",
+    "0x3dee6d6efc82ffb074dbfe0d5de7af5220983d5e78b696747e7a4262f474099d",
+    "0x3e152365fa3ccc4ee4a22d88527d742b87d18cb61857b75732a5864bcb594e75",
+    "0x40046205a39ce19ad2ac90160a2b7c29b4282241a985988af9cee7bd11af8ca2",
+    "0x4313ce18b3aa923c2a1fdffc61dfe432a16d5845cbba9c8f47308aa25db7a249",
+    "0x434f0d940e5cb32642bb3964cffb1a1c96a48c3c0581f82ce9cc0778af31b781",
+    "0x452806e00e54796f169155bdafd0167b2a2502e9e3c8c82896207a8a6321e53c",
+    "0x4695ffbd98242731feeae2daa87de1f14cd90811cf90597b49ba36666ebfc7b6",
+    "0x4778b5b1941f6efd66f7970ba20a76209625f470bfd60992b6e80b2377630907",
+    "0x493cf6c2c8648c9f151b8939e054c380d479be5eed3d53fe91f5f4c2ee9c5412",
+    "0x496fd41d84c9a1acffa907c90579d51bb0549b2b87a5558d0240d6f43f24f5b6",
+    "0x4a03398acc8d897c5e34d9b0d7dae57e7fe2d478335c6a165936c4a6cd9af02c",
+    "0x4b79b6dc91a7ee33373b115991c3eb287ed710cfb6708421b4cab682eddbfcbd",
+    "0x4b8ff9d00b550f5333b8552bb219bb1b86498ff2c9ffc0b4730e5abae2750075",
+    "0x4d32a328d5ccef59c7da437d3749e183bcc7236a1e6c40663ddfbb3a14e7f62d",
+    "0x505c181cfacc422520a4b7b46e36a3c745a12dc932b0d7c2933aaed018e77c42",
+    "0x51071f4171f4afb08158e4b946d2894c022b5205d1c80a29f1c4a268296a1d99",
+    "0x5162102b1ae092c32cc91ab947a63cd411465b78f1346a06bce78229915f7de2",
+    "0x5275db4d71d6b016c8b3327e3633d12082fed42feea9f046fd95d7d3c5372b02",
+    "0x53a01996cfbd70f186264ec54f2c07171896129cf832237ffbbcdaced6f13edc",
+    "0x5525d3e3d50b7960922bdda21b07be42052dce670081997c15ea905b7fb42c66",
+    "0x5a4994bf1e1cb93e47b7597620ef127ff3caa5628d201244b4a7e11ab2543f47",
+    "0x5a5004dd4cd1a694b14f7414230ed9dcb307c45fd0aacaf7bd69fc3426762269",
+    "0x5a758681fb7144eb4b2f04f237bc90f8085c02ddac0a900bbddd349d37fa9d20",
+    "0x5ac640fd42e1b57b757d5367ed2f81e636a6e40e7510d1140d43063f1b7a9e3c",
+    "0x5bd276879b7f9082077c08ef0beb462f90b30e3308a9908c5d1f01caff2a488c",
+    "0x5c0275611fa7e66ae555c8de886a69a176508805146c60b58dd3052b8cd44cb7",
+    "0x5d33273a4c24ac705f2c11e3ec452f5f57e3d08623d53a2398f1fb363a471614",
+    "0x5dfcce1c14dbddc985a098fbc3cb717eac1827764138d27586b690761b7813a4",
+    "0x60b47e86983dfe1c6ccc710bb3da1cd6a7ebf08c0c8fc7e9b34a0bbd4fcf1e0d",
+    "0x647f0919e9075e2b1b28a0eef3f6103087da7fa244d76bdaec9787bb96685b3d",
+    "0x6762b8c533cd2eda9817c5257203b830bed2cbfb3f6e3aae5dee23a3d5b7c382",
+    "0x67baa69ff281e855194b6f7e61ac37fd391250eb8f5eb90ab74adca1238f5cf3",
+    "0x68a18d9aacd583472c39bdb6a2cccd6151e68010820b0c9bfcd0e5d00a032be1",
+    "0x6903994b3a337ee8f70f6add85f4722994844e892763e5296c879bffd17c46a1",
+    "0x6b5c04a30de5c678887ded69610f568817a3d34d337a074e02daa6ab4de10aac",
+    "0x6d0113a0f93d5ed1991ff8bbda51a447712cadd4eabd130957a81bc815bd1a8c",
+    "0x6e663711038c8029217e36a6a605fbe2806646ee7aaf67c796022806243fbe8d",
+    "0x6f7c04b5234dfeba29bf4ef61a9c0b909f620144f28e430293297d79cff359e4",
+    "0x714b29479428da9f5aab17d4aa708e2ef76753fe4082578e853ce29d80ab5aa7",
+    "0x73bdbfe88598b0c68fab3b0c16ff6df69fb5fbb8efdcdeed45ebba161e186b85",
+    "0x74224b751fde50b39c14627c4e9b7f8365490b8b2cfa8c69dd9c23882a4e51cf",
+    "0x7454531404ab75b1cf5711d74a9e240777a4c01fd95b1e64191a6b46a58b0f7b",
+    "0x74a0d6c350d0a3f7d6ad849a08f47a07125075b3106e1da282848925ee01d19f",
+    "0x77a41d4cbf5ebd4051befe9393a5a6e4531136b08e2e5c0c005eb54f329c36ab",
+    "0x78967b5115fc6ca5ea4bbdb102dd047cdfa2b599871131d7e2ccdded1fb48fa5",
+    "0x78aaf528465a0de10de76c4b2c6362ae281a432c267cb7c9f7596d32bd9af12d",
+    "0x79fd8d33a5285f66fc6ab5e96b17dbe4ad9da8bf21b853bbcb419d7bdc5b4173",
+    "0x7a811ff2fff41db3465b5ec0ff4d7345af4fb09ee10cc7202f5c5372efa0c9cc",
+    "0x7ae9d7bb1349e0d46f90286c76cbaad5a78fd0280341cadf40ace50f82aba8f6",
+    "0x7df893208f9e16a4660a1c65e6031841579df29bc5f746c9f5ff151989f0f096",
+    "0x7f40e45fc50c838ed1d420b5012d8f7ed4c925ebbe3a59a134fe5421f8ec5ff5",
+    "0x7f6a8d12db4981a9983f60cd4d7502eed4595417fb482268b99a1acf54dc0ea5",
+    "0x7f8b8bc766e4247bd3620a5554b5caa9a8426db3499146859986430167fb67f2",
+    "0x80f36487864dc5986812f4eb86f57d74d66575c256640371a9fdd3e020b322f7",
+    "0x817a0da779a04cf8c989f71e744754c9f7e1fcf42e63c0d100c69a413e05fac3",
+    "0x82af444ca0a64f72def1dfe9795cfb64ab869ff536c53b6192a2c39b658e9d66",
+    "0x837f7074add53deb5cb63c97ae9343d7636b14b49cf90f4a21444c8dc3e55919",
+    "0x8570fda7d9347b6935fbfc95c12ee609b714052fcbb44e947441d1eb0e381f72",
+    "0x85fe3fd996d2ab1dae6ac280da31de5a6b1436bc8112e61ea541bda5db54d497",
+    "0x864d35d279e8122e3b074e0374d7cb472b3ca7bf24bf46d335b23661fed7f559",
+    "0x8682b0823cd54a6a5097fec8f06bbefd69f56452c6b2b311362f51a149d15e41",
+    "0x8797038fd369babed2c48978f3a6e2462a3fc2b18c07bf56e3aaf95a99e075d0",
+    "0x89b47437edc077d62e0446e24bccc4067b12019e9f1434ceacaa7aea37ab5085",
+    "0x89bd49d6dbe629ae9b93e6f6901e31a5d2c2487b432b7b500f59569d9383c795",
+    "0x89f5a89ec31ecc76d23f66079f82330ae58671429fe8eb1686383ae41a23cebd",
+    "0x92463329fe4f74116a7f7b51f9c3f7b5e48061846a6a8e7937e65e83b7df0059",
+    "0x9292aa8aca4432abca2abd9747c0b2869c58f9ee5e500179ccd16f908746302b",
+    "0x93b6dae9c0c234181663326f7b70c27bf0c412c0ace7e3941ae1f977864a7dbe",
+    "0x942deca80dbfcb8fc9df28d94be59ea3f0d8ee8f99d9d9c726f427ef6fa1ebb8",
+    "0x953f1054761b7a4551fd407a990d3f9e6ac8031589a5c2ee620389d11e0e4a86",
+    "0x959477ebb34e9d41c26c69ccb1d31932d728f7b9d4e71960d0061c2aa42ab11f",
+    "0x96f11d088765ec7951d16f919a7ff0950a5bd9291443b2b437400cfba687a8e2",
+    "0x972d2758c265b6a9e504ecdb1e19774cba5ad7b8e5f3d19070d823fde255c177",
+    "0x98370885ba6306d324f3493a0cda4dc3fe1bfd07ab31b9c6f878634bedd451e7",
+    "0x9905ac89d59f813b35cd75773253b4a51563e74999a6391813e817b983c7abd4",
+    "0x9916c1a70d97465607e2f23135a38ad0e7e3bc4bd2f656c55b075c3ba669c9b3",
+    "0x996406a941d61a1746d80ca76687627c7b7cbe0fc8eaf6555e6a809d33ad764e",
+    "0x99c29ebc15a6499e9d074c9c6ce49bc48ecf4b2f881b71c8e927c4fd29f63336",
+    "0x99cfb4188e62c060c68af7d2d122a6bdca02252ca8922b15c08e5d05e86e3022",
+    "0x99e5622d2afc9877048e014a11ae30c8a3d6934a68ed3685b491f360c038228a",
+    "0x99f389c930133a932a08e810e449dad2e1f2c61f359dfc379b4e14f58a766d69",
+    "0x9a716e705eb2fbcd7b89fc46d1c4672313768f5fdaa318e866ff70567e3c1a1f",
+    "0x9aa201adff45f3c4b59cac9d074def6d5ff5a87e393aba368589e1a9a4418ab7",
+    "0x9b6d6a3db63a0b4e84012e499560590a198f4739b7295c3d34cd50ff2c51dc48",
+    "0x9c0cf9d9a6d33e593fef3dba130a0e9d810a35dadf5c22c45a6a9942d5b6bfa7",
+    "0x9c459017dbbc6468a4d4c83e0b22654b44107cc2aedb998c36194a2729a83ce1",
+    "0x9c7b206ec5d8b7ce03009ea131b3052b94ebc7d6f173fc000c87c4b538803116",
+    "0x9c8cd3d0f4d5af8c7f5cd1c45208edd308bfe472e353a50e4cbacbf6cb58627c",
+    "0x9d450dc474fa0d57a93aba8257622be5a2d906c0b60d02b40b260dab2ffcd744",
+    "0xa2d903e2d40c32cb07917ceeb05099212ecb8c509dfd3a4080db1cdc494c1f61",
+    "0xa328c725f0cdee63c320cc5bf4be71875c9509a5bf2a53ad26d1274ae8f3478f",
+    "0xa458822f8ceef1a94e92dfdda06748fc7026f9a9c7f4472fdce55639059698f8",
+    "0xab520e9d499879ed0751207972e0d952578935d712562b6a8f131cb488d5279e",
+    "0xab71b0bcae4d3a9ddda8c71eb1f250d3a0bcdcb78787b6e97dd96f1eb924d2e6",
+    "0xaba7a01164a0f1d17043c4991484f7ad5a63314bb362f621f214bf31856e6a40",
+    "0xada812689332c1597dae91cc841d2f12782e58e21db7243a0aa4b7c251fc2f31",
+    "0xae7abc0e8c0eb16b02ac5478edbf78017fa34987d748df46292b066f1580d4dc",
+    "0xb06f1e624adcdf0e5237caa91a76329c8a403ddd726f3b58bbfb49d9ba7cb2aa",
+    "0xb0aadb24f81c5cee6d24dcfc9077cb8c7a8157a3aa676367455efe59a3331787",
+    "0xb145de681804ec4dfe77620a6dd15968fed526be4b4452f1fda561f8c7d2f782",
+    "0xb32cb4726155800367b1e44af2fd940b77aed84cc9baa11c0381bf35dd993c98",
+    "0xb868651b847a7888eb49892608974da2793b6cff8b11784429af072c5c1c443c",
+    "0xb896d076dc80309365917159d7696651dd588daeb0891c51d8c590aa17e43bf7",
+    "0xb9183742331bde0d565e9dfb99950e2dece47c4b40e73b6e6ca7d1ae781d153f",
+    "0xb9e95e4407bdbca592d714c8da58057121c49599839236f1a8fc0a261546c3dd",
+    "0xbbccaeedc19295ff50d0924a78add09fc3c48a3d564843b31b514a046f21f82f",
+    "0xbc3dd57a1b2c12724ff7dcc553edaadaa1ce0381e6cc2df879c771889a77d3be",
+    "0xbe3a09a64f6b2b68b009abcfd1a54e07215ae3c57f471ed3cd91a004b0bb4a4a",
+    "0xbecb384cc4caf40f479b57d4ccca647968a035c50a9d5bdee49c7bd2cb6e4b2c",
+    "0xbf15d423de8f346ca5ae9ac5a8b34b823c3565dd4de17af989d645b4d97d5ebb",
+    "0xc00206b863403b8cfcff15977449366c0a7ff72f368603cb6660e4fd45e8d0f6",
+    "0xc11b0d2ca110df96e6870808030d4e824a08464442e247e2fe0960a834d9c9ff",
+    "0xc1efaaa89010300d6d7cd4945c8bc5cdbf8ec68c0a2839bdab17fb4f29058337",
+    "0xc22d1d0de0c66ccb32b991abda1fba80502ea310200b12ec54ec37b55a6cf33a",
+    "0xc3848643a0b96c613731bcf7d1186672c27eb09279dc6fa423147315e896bc51",
+    "0xc42de5dc22b72c1cd856cb0a3ee0c2a621116b8857a14946470bc848c1d2fcf9",
+    "0xc5043d5f08c4e6b84b45f9fbce6579a3ed489e7835ce4bac788265c3832eda8c",
+    "0xc56588e57bfbc44cae5a469d8067ba593c7fc40596f462c9f8e3d059c0b929f0",
+    "0xc9dcc5a4452592a44029fbf939b3b5e2517457cc2f791a8cd8250acd5894f688",
+    "0xca92d0bf070139b22f483f8f66d83e22004c7987b37b74563ec9722e05188b87",
+    "0xcaceed791ab96923abea639e3faa2b0a98b94bf61b387d92e12054dcbcf756ce",
+    "0xcaf7a7cb6c47621c008b6251d846fecd1899e6a02242bc7eb261ebc86b2ac9ca",
+    "0xcb0b749c3acfd1b74e9cb492955a3dbe403f87270497a7dd96ca2a0a342e4ca7",
+    "0xcbb97da323c96fb99f199b44121c2afff066e44c2e24259d555f0334074a2bab",
+    "0xccc9fd2e42152b922adcfdf884ae8c8e393471818c7d460aee31ac661e8ab290",
+    "0xcdcbd09d504170451f13aa8e81026843da2fc5f7ee28f406268f4776f359edf4",
+    "0xcf5826efd7e9bf969567ebbad8d34343e4c25e0d7687cfb4050e6911c741adcd",
+    "0xcf76b5b159b409d2728736239c460a89b7b605a28e03c74e2451729241fdc1dc",
+    "0xcfc3440d1eb6db1510cba73d6c2092d4eacf42c98fcc6bc57be5da36a132665f",
+    "0xd23805fc83358b80ec198bec4a7280b3e4c5695a70320cbe492f50b4f97c3b11",
+    "0xd3bc511e16efea35a9a163cec5bceb9c5e7fbf0b5532efd1d9e277c7f296456b",
+    "0xd43a71f962bac9ef1b39ff61ed10f2f5c114409e6b1b65610fc769683882c07d",
+    "0xd47333373ea6b93b04f95a58e159ded7eec30c7e0e5d2e514e1ac47540868c49",
+    "0xd4bd79f13fe8a909f0a1f10e8924e17e5889dedbd053dbb69d948759a828819d",
+    "0xd9d9673ea0d95d44656e024410dfb6e27711821ac6c6caf11cc91f888b1f55f2",
+    "0xdb0d42286fedc321db4e3911f0833cb8ecc7c0f2b4e366d287ba544e7f2f99ee",
+    "0xdbf11c3e0011c6311fe9b0a151d91666d9af31adbf00937bd92bc32944ab819d",
+    "0xdc525a562dd92c653f3a901e89933017d3f21c8a6dabc2bc6400ab4953b4812e",
+    "0xdde191aaa9f6739f881771f0167fd7d5a9ef0bf226c77fd418768b84355a1af1",
+    "0xdf5a3bf35c8223684ee5e172b1770ab174b036d1dec90e2c2cd3dbfbd97fa1ea",
+    "0xe261722870a540b877524c5ed2b396294bd5246721cfab0e0465298f5caea7b1",
+    "0xe26d469e1eefb05ab08be27160f335fb053d81e5934089a6272490e9f8469e70",
+    "0xe26fe09a4e41997ad0891d0927f50d4dcc05fd22368521f3f88b4a8d57de4703",
+    "0xe2dd293c169c33f51f62662006e320d48f55f960741bd531ab25382e33617f3c",
+    "0xe3f9091e8db5d833ddac014d4ab39346c5c36a5d5d95360591adab9fec4286cb",
+    "0xe5861db41b191b840edc049b9ca646304dc31319b83f66248f1978307b89682b",
+    "0xe68b3b85d73840211f42f77bd3a75da081b50c8cdc7fbbbaa69b11184b16a18f",
+    "0xe6b3d8456dbc53ae161a285e707bc3665f0b6338cdf2cfc8ac30254c2019c141",
+    "0xe84aa2e9868cef08fd7a74f300c11c8a4210b6d7da0781493a71256a9476d891",
+    "0xe887d0513f377563ed1cea271547decc444e5a6b65364ee7eb0e2478f4f36173",
+    "0xead80fda0983cabcb1f881ab780e23cf1712aeda0716b20ad173871dbfc8105f",
+    "0xed07b183a524d9e63c7548b71b53905321920dccf9746fee322f6c69ded7f4f8",
+    "0xedc20dfec22343cde7b4d0b463ad44941b4d2eb461eadae201dd4a962d3f01b9",
+    "0xef6d1b81d34f6e75b202003948f9d6ed9eb3169cddda726b8a36fc75a7f70099",
+    "0xf2204a4c62f2786341d5b9eaecc26724666873c32769d7d1cc86754114d635ee",
+    "0xf32d719235a9f65ff776b4cb4a99abbb667a40e110c2215ddbc40bd1f28b257e",
+    "0xf43b2daa4da8be598e33e66226b9173604b2701889e2b22bb8c9de822ef2e325",
+    "0xf450aeb9f53bbfa9acedf76601d26f087ca74a5f28a8fa08001c40b3b999f5d3",
+    "0xf4b1133b76ec1dd19c0882fc07d22ccf0a66ec84bf467b29da8187cb6e0ed6f7",
+    "0xf531ea4a82008e3ee499b873d00f89f99336dd23f98b69493c01eecd587fb085",
+    "0xf62da23556d8b4cf62285e7bb0cdc6844609e8ec242e2bbe78bc564d45f4d24f",
+    "0xf79afa75ae08d3d6c60c92920971a0cbef6bc6ffe4faff34ad461359c0f9f3f9",
+    "0xf7a7a7b59bfb4da7e9a2f2c60218abe2b0337608569284d8977fa6c99a6d01a1",
+    "0xf7e4cd1333246e1dbc29dcd4ebb3a22a847e70dab314504f4fcf4f96580547cd",
+    "0xf8aac093c1f0273d874e413907cbd5acb1c93ef863c68c764a436788d9789ccd",
+    "0xf8df71ad091ca64bd19384353982469ab1308afd5f74603914e95bbb15540303",
+    "0xfa3f06c418b14e733feac3e7c6868abeb0280750eb1aa6a9e05f84e4e311fb66",
+    "0xfa5c9e85488e0b9b15a9355605c03691934cdf790debfa28313fab0c8ae2cc65",
+    "0xfb8ee6bbfca1151b110dddccd12db831886e08b5df544e2c805dd9247fa881a4",
+    "0xfc8a1c02d08ea9be10790cfce7cba133a809b9593eee5af8a4f7a4331d6a04ca",
+    "0xfe33e59c9dd7308bdf6939b80901fe3393b346d9e18af0cab564b4048f19fbea"
+  ]
+}</script></body></html>

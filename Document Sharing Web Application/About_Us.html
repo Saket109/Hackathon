@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #293649f5;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us !!</h1>
+  <p>We aim at providing fast and free document uploading website and also you can share documents with your friends .</p>
+  <p>
+        <img src="https://media3.giphy.com/media/DGWAx8d3IkICs/200.webp?cid=ecf05e47tp5t8t9ng9elhd7wklc8xygwi6sd9046r52elubb&rid=200.webp&ct=g" alt="Cheers !!!!">
+  </p>
+  <!-- <p>Resize the browser window to see that this page is responsive by the way.</p> -->
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Arpit.jpeg" alt="Arpit Singhal" style="width:100%" style="height: 40%;">
+      <div class="container">
+        <h2>Arpit Singhal</h2>
+        <p class="title">ECE 2nd Year Student</p>
+        <p>Arpit is frontend developer and writes most part of the frontend code of the website</p>
+        <p>singhalarpit08@gmail.com</p>
+        <p><button class="button"><a href="mailto:singhalarpit08@gmail.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Saket.jpg" alt="Saket" style="width:100%" style="height:40%">
+      <div class="container">
+        <h2>Saket Ahlawat</h2>
+        <p class="title">ECE 2nd Year Student</p>
+        <p>Saket is the full stack developer and has a huge contribution in the frontend and the backend code of the website </p>
+        <p>saketahlawat661@gmail.com</p>
+        <p><button class="button"><a href="mailto:saketahlawat661@gmail.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Chirag.jpeg" alt="Chirag" style="height: 385px; width: 100%;">
+      <div class="container">
+        <h2>Chirag</h2>
+        <p class="title">ECE 2nd Year Student</p>
+        <p>Chirag is a fullstack developer and has contributed in both frontend and the backend</p>
+        <p>chiraggupta2019@gmail.com</p>
+        <p><button class="button"><a href="mailto:chiraggupta2019@gmail.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Vishwjeet.jpeg" alt="Vishvjeet" style="width:100%" style="height: 40%;">
+      <div class="container">
+        <h2>Vishvjeet Thakur</h2>
+        <p class="title">ECE 2nd Year Student</p>
+        <p>Vishwjeet is a backend developer and has contributed in most of the backend code of the website</p>
+        <p>vishwjeetthakur995@gmail.com</p>
+        <p><button class="button"><a href="mailto:vishwjeetthakur995@gmail.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

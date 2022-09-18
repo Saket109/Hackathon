@@ -1,0 +1,109 @@
+.navbar {
+    background-color: burlywood;
+    display: block;
+}
+
+.navbar ul {
+    overflow: auto;
+    position: absolute;
+    right: 34px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 3px 3px;
+    margin: 13px 5px;
+
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid black; */
+    text-transform: uppercase;
+
+}
+
+.navbar li a.login
+{
+    /* border: 2px solid green; */
+    margin: 11px 4px;
+    padding: 5px 4px;
+    /* color: blue;
+    background: cyan; */
+    text-transform: uppercase;
+    /* transition-duration: 0.1s; */
+    
+}
+.navbar li a.login:hover
+{
+    background-color: powderblue;
+    color: wheat;
+
+}
+.navbar li a.sign
+{
+    /* border: 2px solid green; */
+    margin: 11px 4px;
+    padding: 5px 4px;
+    /* color: blue;
+    background: wheat; */
+    text-transform: uppercase;
+
+}
+.navbar li a.sign:hover
+{
+    background-color: cornflowerblue;
+    color: wheat;
+}
+
+.left_part{
+    position: absolute;
+    left: 80px;
+    top: 20px;
+}
+
+.button{
+    background-color: #168eea;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-color: #137dcf;
+    border-radius: 4px;
+    font-weight: 500 !important;
+}
+
+.right_part{
+    position: relative;
+    left: 600px;
+    bottom: 300px;
+    border-width: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.main_heading{
+    font-weight: 900;
+    font-family: 'Cerebri Sans';
+}
+
+.heading_content{
+    letter-spacing: -0.2px;
+    max-width: 530px;
+    font-weight: 400;
+    font-size: 1.37rem;
+    padding-top: 0.85rem;
+}
+
+.beer_glass{
+    position: relative;
+    top: 400px;
+    border-radius: 0.4rem;
+    height: 50px;
+    width: 10px;
+}
